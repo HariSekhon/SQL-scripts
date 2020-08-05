@@ -28,5 +28,7 @@ WHERE
   relkind = 'i'
 --    AND
 --  relname LIKE 'someprefix%';
+    AND
+  relname NOT ILIKE 'pg_%'
 ORDER BY
   2 DESC;
