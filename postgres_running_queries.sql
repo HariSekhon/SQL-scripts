@@ -21,11 +21,12 @@ SELECT
   pid,
   age(clock_timestamp(), query_start),
   usename,
+  application_name,
   query
 FROM
   pg_stat_activity
 WHERE
-  query != '<IDLE>'
+  state != 'idle'
     AND
   query NOT ILIKE '%pg_stat_activity%'
 ORDER BY
