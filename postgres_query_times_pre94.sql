@@ -27,7 +27,7 @@ SELECT
   rows,
   ROUND((total_time::numeric / 1000), 4) AS total_secs,
   -- newer versions of PostgreSQL have mean_time field, but we have to calculate on PostgreSQL <= 9.4
-  ROUND((total_time::numeric / 1000 / calls), 4) AS average_secs,
+  ROUND(total_time::numeric / 1000 / GREATEST(calls, 1), 4) AS average_secs,
   query
 FROM
   pg_stat_statements
