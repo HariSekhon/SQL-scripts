@@ -21,7 +21,7 @@
 
 SELECT
   pid,
-  user,
+  usename,
   pg_blocking_pids(pid) AS blocked_by_pids,
   query AS blocked_query
 FROM
