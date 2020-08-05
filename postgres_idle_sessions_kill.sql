@@ -30,6 +30,13 @@ WHERE
   --  AND
   --usename not in ('postgres')
     AND
+  query in ('')
+    AND
   state in ('idle', 'idle in transaction', 'idle in transaction (aborted)', 'disabled')
     AND
-  state_change < current_timestamp - INTERVAL '15' MINUTE;
+  --state_change < current_timestamp - INTERVAL '15' MINUTE;
+  (
+    (current_timestamp - query_start) > interval '15 minutes'
+      OR
+    (query_start IS NULL AND (current_timestamp - backend_start) > interval '15 minutes')
+  )
