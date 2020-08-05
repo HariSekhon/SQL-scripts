@@ -28,7 +28,7 @@ SELECT
   query_start,
   state_change,
   datname,
-  user,
+  usename,
   client_addr
 FROM
   pg_stat_activity
