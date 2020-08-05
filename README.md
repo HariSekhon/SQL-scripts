@@ -11,7 +11,7 @@ You can quickly test these PostgreSQL scripts using `postgres.sh` in the [DevOps
 
 #### See Also:
 
-`sqlcase.pl` in the [DevOps Perl tools](https://github.com/harisekhon/devops-perl-tools) repo - autocases your SQL code
+- `sqlcase.pl` in the [DevOps Perl tools](https://github.com/harisekhon/devops-perl-tools) repo - autocases your SQL code
   - I use this a lot and call it via hotkey configured in my [.vimrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.vimrc)
   - there are specializations for most of the major SQL, RDBMS and distributed SQL systems using their specific language keywords
 
