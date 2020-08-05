@@ -4,7 +4,7 @@ SQL Scripts
 Reusable SQL scripts, split from [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools), for which this is now a submodule.
 
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
-- `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries
+- `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
 - `postgres_*.sql` - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
 
 You can quickly test these PostgreSQL scripts using `postgres.sh` in the [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools) repo, which boots a docker container and drops in to `psql` shell with this directory mounted at `/sql` for easy sourcing eg. `\i /sql/postgres_query_times.sql`
