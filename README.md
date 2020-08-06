@@ -30,7 +30,7 @@ or just
 \. mysql_sessions.sql
 ```
 
-since the $PWD is set to `/sql` for convenience
+since the `$PWD` is set to `/sql` for convenience.
 
 
 #### See Also:
