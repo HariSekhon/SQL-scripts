@@ -43,4 +43,6 @@ SELECT
 FROM
   sys.session
 WHERE
-  user <> 'sql/event_scheduler';
+  user <> 'sql/event_scheduler'
+ORDER BY
+  current_memory DESC;
