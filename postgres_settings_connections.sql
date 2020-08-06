@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL connection settings
+-- Show PostgreSQL connection settings eg. listen_addresses, port, max_connections, unix sockets
 --
 -- Tested on PostgreSQL 12.3
 
