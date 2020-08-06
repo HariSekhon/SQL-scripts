@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL resource settings eg. shared_buffers
+-- Show PostgreSQL resource settings eg. shared_buffers, work_mem, max_files_per_process
 --
 -- Tested on PostgreSQL 12.3
 
