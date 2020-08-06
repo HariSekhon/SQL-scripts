@@ -41,6 +41,6 @@ SELECT
   trx_latency,
   trx_state
 FROM
-  session
+  sys.session
 WHERE
   user <> 'sql/event_scheduler';
