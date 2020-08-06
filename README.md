@@ -3,7 +3,7 @@ SQL Scripts
 
 [![Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Mac](https://img.shields.io/badge/OS-Mac-blue?logo=apple)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
-[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-1.5k-lightgrey)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
+[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-2.6k-lightgrey)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-blue?logo=github)](https://github.com/HariSekhon/SQL-scripts)
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-blue?logo=gitlab)](https://gitlab.com/HariSekhon/SQL-scripts)
 [![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-blue?logo=bitbucket)](https://bitbucket.org/HariSekhon/SQL-scripts)
