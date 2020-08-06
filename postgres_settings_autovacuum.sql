@@ -35,4 +35,5 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Autovacuum
   category ILIKE '%Autovacuum%';
