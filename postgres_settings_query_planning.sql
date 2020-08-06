@@ -35,6 +35,12 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Query Tuning / Planner Method Configuration
+  -- Query Tuning / Planner Cost Constants
+  -- Query Tuning / Other Planner Options
+  -- Query Tuning / Genetic Query Optimizer
+  -- Statistics / Query and Index Statistics Collector
+  --
   -- more general to pull in 'track_activities' from category 'Statistics / Query and Index Statistics Collector'
   --category ILIKE '%Query Tuning%';
   category ILIKE '%Query%';
