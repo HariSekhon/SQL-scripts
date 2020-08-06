@@ -35,4 +35,5 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Resource Usage / Memory
   category ILIKE '%Memory%';
