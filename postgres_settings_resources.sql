@@ -35,4 +35,10 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Resource Usage / Memory
+  -- Resource Usage / Asynchronous Behavior
+  -- Resource Usage / Cost-Based Vacuum Delay
+  -- Resource Usage / Background Writer
+  -- Resource Usage / Disk
+  -- Resource Usage / Kernel Resources
   category ILIKE '%Resource%';
