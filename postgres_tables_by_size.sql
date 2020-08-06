@@ -18,19 +18,19 @@
 -- Tested on PostgreSQL 12.3
 
 SELECT
-	--nspname || '.' || relname AS relation,
+  --nspname || '.' || relname AS relation,
   nspname,
   relname,
   pg_size_pretty(pg_total_relation_size(C.oid)) AS total_size
 FROM
- 	pg_class C
+  pg_class C
 LEFT JOIN
-	pg_namespace N ON (N.oid = C.relnamespace)
+  pg_namespace N ON (N.oid = C.relnamespace)
 WHERE
-	nspname NOT IN ('pg_catalog', 'information_schema')
-  	AND
-	C.relkind <> 'i'
-   	AND
-	nspname !~ '^pg_toast'
+  nspname NOT IN ('pg_catalog', 'information_schema')
+    AND
+  C.relkind <> 'i'
+    AND
+  nspname !~ '^pg_toast'
 ORDER BY
-	pg_total_relation_size(C.oid) DESC;
+  pg_total_relation_size(C.oid) DESC;
