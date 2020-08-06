@@ -17,6 +17,8 @@
 --
 -- Tested on PostgreSQL 12.3
 
+-- https://www.postgresql.org/docs/12/runtime-config-logging.html
+
 SELECT
   name,
   setting,
