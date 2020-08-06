@@ -34,6 +34,7 @@ FROM
 WHERE
   name ILIKE '%ssl%'
     OR
+  -- Connections and Authentication / SSL
   category ILIKE '%SSL%'
     OR
   short_desc ILIKE '%SSL%';
