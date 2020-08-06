@@ -35,4 +35,9 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Write-Ahead Log / Settings
+  -- Write-Ahead Log / Recovery Target
+  -- Write-Ahead Log / Checkpoints
+  -- Write-Ahead Log / Archive Recovery
+  -- Write-Ahead Log / Archiving
   category ILIKE '%Write-Ahead Log%';
