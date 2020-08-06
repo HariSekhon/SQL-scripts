@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL SSL settings
+-- Show PostgreSQL SSL settings eg. ssl on/off, ssl_cert_file, ssl_ciphers etc.
 --
 -- Tested on PostgreSQL 12.3
 
