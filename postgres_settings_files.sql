@@ -20,9 +20,10 @@
 SELECT
   name,
   setting,
+  -- category
   short_desc,
   vartype,
---  enumvals,
+  -- enumvals,
   source,
   min_val,
   max_val,
