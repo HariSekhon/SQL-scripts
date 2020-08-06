@@ -17,12 +17,14 @@
 --
 -- Tested on PostgreSQL 12.3
 
+-- https://www.postgresql.org/docs/12/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-MEMORY
+
 SELECT
   name,
   setting,
   -- category,
-  short_desc,
   vartype,
+  short_desc,
   -- enumvals,
   source,
   min_val,
