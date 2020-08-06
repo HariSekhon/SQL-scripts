@@ -35,4 +35,6 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Statistics / Query and Index Statistics Collector
+  -- Statistics / Monitoring
   category ILIKE '%Statistics%';
