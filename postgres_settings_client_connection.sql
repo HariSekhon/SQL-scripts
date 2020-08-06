@@ -35,4 +35,8 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Client Connection Defaults / Statement Behavior
+  -- Client Connection Defaults / Locale and Formatting
+  -- Client Connection Defaults / Other Defaults
+  -- Client Connection Defaults / Shared Library Preloading
   category ILIKE '%Client Connection Defaults%';
