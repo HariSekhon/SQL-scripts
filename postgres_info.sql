@@ -23,7 +23,20 @@
 
 -- version() returns a long human readable string, hence we split from others SELECTs eg.
 -- PostgreSQL 12.3 (Debian 12.3-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
-SELECT version();
+SELECT
+  version(),
+  current_setting('server_version') AS "server_version",
+  current_setting('server_version_num') AS "server_version_num";
+
+SELECT
+  pg_postmaster_start_time(),
+  pg_conf_load_time(),
+	current_setting('logging_collector') AS "logging_collector",
+	current_setting('log_destination') AS "log_destination",
+  pg_current_logfile(),
+	-- current_setting('log_directory') AS "log_directory",  -- log
+	-- current_setting('log_filename') AS "log_filename",    -- postgresql-%Y-%m-%d_%H%M%S.log
+  pg_jit_available();
 
 -- SELECT pg_reload_conf(), pg_rotate_logfile();
 
@@ -53,7 +66,9 @@ SELECT version();
 SELECT
 	current_setting('config_file') AS "config_file",
 	current_setting('hba_file') AS "hba_file",
-	current_setting('ident_file') AS "ident_file",
+	current_setting('ident_file') AS "ident_file";
+
+SELECT
 	current_setting('unix_socket_directories') AS "unix_socket_directories",
 	current_setting('unix_socket_permissions') AS "unix_socket_permissions",
 	current_setting('unix_socket_group') AS "unix_socket_group";
@@ -63,6 +78,8 @@ SELECT
 	current_setting('work_mem') AS "work_mem",
 	current_setting('max_connections') AS "max_connections",
 	current_setting('max_files_per_process') AS "max_files_per_process", -- should be less than ulimit nofiles to avoid “Too many open files” failures
+	current_setting('track_activities') AS "track_activities", -- for pg_stat / pg_statio family of system views that are used in many other adjacent scripts
+	current_setting('track_counts') AS "track_counts", -- needed for the autovacuum daemon
 	current_setting('password_encryption') AS "password_encryption";
 
 
@@ -75,6 +92,7 @@ SELECT
   session_user,  -- connection user before superuser SET SESSION AUTHORIZATION
   current_schema,
   current_catalog, -- SQL standard, same as current_database()
+  pg_backend_pid(),
   current_query();
 
 SELECT current_schemas(true) AS "current_schemas(true) - auto-searched schemas"; -- true to include implicit schemas eg. pg_catalog
@@ -108,15 +126,10 @@ SELECT
 -- ========================================================================== --
 
 SELECT
-  pg_postmaster_start_time(),
   inet_client_addr(),
   inet_client_addr(),
   inet_server_addr(),
-  inet_server_port(),
-  pg_backend_pid(),
-  pg_conf_load_time(),
-  pg_current_logfile(),
-  pg_jit_available();
+  inet_server_port();
 
 -- causes 0 rows when mixed with other select funcs
 --SELECT pg_listening_channels();
