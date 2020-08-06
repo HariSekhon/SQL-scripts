@@ -1,0 +1,41 @@
+--
+--  Author: Hari Sekhon
+--  Date: 2020-08-06 02:45:44 +0100 (Thu, 06 Aug 2020)
+--
+--  vim:ts=2:sts=2:sw=2:et:filetype=sql
+--
+--  https://github.com/harisekhon/sql
+--
+--  License: see accompanying Hari Sekhon LICENSE file
+--
+--  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
+--
+--  https://www.linkedin.com/in/harisekhon
+--
+
+-- MySQL tables across schemas, excluding information_schema, mysql and sys
+--
+-- Tested on MySQL 8.0
+
+SELECT
+  table_schema,
+  table_name,
+  table_type,
+  engine,
+  table_rows,
+  avg_row_length,
+  data_length,
+  max_data_length,
+  index_length,
+  data_free,
+  auto_increment,
+  create_time,
+  update_time,
+  table_comment
+FROM
+  information_schema.tables
+WHERE
+  table_schema NOT IN ('mysql', 'sys', 'information_schema', 'performance_schema')
+ORDER BY
+  table_schema,
+  table_name;
