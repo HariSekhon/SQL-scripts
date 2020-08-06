@@ -35,4 +35,5 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Lock Management
   category ILIKE '%Lock%';
