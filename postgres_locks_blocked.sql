@@ -34,7 +34,8 @@ ON
   blocked_activity.pid = blocked_locks.pid
 JOIN
   pg_catalog.pg_locks AS blocking_locks
-ON blocking_locks.locktype = blocked_locks.locktype
+ON
+	blocking_locks.locktype = blocked_locks.locktype
   AND blocking_locks.database IS NOT DISTINCT FROM blocked_locks.database
   AND blocking_locks.relation IS NOT DISTINCT FROM blocked_locks.relation
   AND blocking_locks.page IS NOT DISTINCT FROM blocked_locks.page
