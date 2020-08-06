@@ -35,4 +35,5 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Connections and Authentication / Authentication
   category ILIKE '% / Authentication%';
