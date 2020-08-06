@@ -18,26 +18,26 @@
 -- Tested on PostgreSQL 12.3
 
 SELECT
-	current_setting('config_file') AS "config_file",
-	current_setting('hba_file') AS "hba_file",
-	current_setting('ident_file') AS "ident_file";
+  current_setting('config_file') AS "config_file",
+  current_setting('hba_file') AS "hba_file",
+  current_setting('ident_file') AS "ident_file";
 
 SELECT
-	current_setting('data_directory') AS "data_directory",
-	current_setting('external_pid_file') AS "external_pid_file";
+  current_setting('data_directory') AS "data_directory",
+  current_setting('external_pid_file') AS "external_pid_file";
 
 SELECT
-	current_setting('unix_socket_directories') AS "unix_socket_directories",
-	current_setting('unix_socket_permissions') AS "unix_socket_permissions",
-	current_setting('unix_socket_group') AS "unix_socket_group";
+  current_setting('unix_socket_directories') AS "unix_socket_directories",
+  current_setting('unix_socket_permissions') AS "unix_socket_permissions",
+  current_setting('unix_socket_group') AS "unix_socket_group";
 
 SELECT
   pg_current_logfile(),
-	current_setting('log_directory') AS "log_directory",  -- log
-	current_setting('log_filename') AS "log_filename";    -- postgresql-%Y-%m-%d_%H%M%S.log
+  current_setting('log_directory') AS "log_directory",  -- log
+  current_setting('log_filename') AS "log_filename";    -- postgresql-%Y-%m-%d_%H%M%S.log
 
 SELECT
   --CASE WHEN pg_current_logfile() IS NOT NULL THEN pg_ls_logdir() END AS pg_ls_logdir,
-	pg_ls_waldir(),
-	pg_ls_archive_statusdir(),
-	pg_ls_tmpdir();
+  pg_ls_waldir(),
+  pg_ls_archive_statusdir(),
+  pg_ls_tmpdir();
