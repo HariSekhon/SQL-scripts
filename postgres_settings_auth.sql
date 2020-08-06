@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL authentication settings
+-- Show PostgreSQL authentication settings eg. password_encryption, krb_server_keyfile
 --
 -- Tested on PostgreSQL 12.3
 
