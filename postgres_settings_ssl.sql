@@ -17,12 +17,14 @@
 --
 -- Tested on PostgreSQL 12.3
 
+-- https://www.postgresql.org/docs/12/runtime-config-connection.html#RUNTIME-CONFIG-CONNECTION-SSL
+
 SELECT
   name,
   setting,
   -- category
-  short_desc,
   vartype,
+  short_desc,
   enumvals,
   boot_val,
   reset_val,
