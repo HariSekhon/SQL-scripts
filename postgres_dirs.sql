@@ -23,6 +23,10 @@ SELECT
 	current_setting('ident_file') AS "ident_file";
 
 SELECT
+	current_setting('data_directory') AS "data_directory",
+	current_setting('external_pid_file') AS "external_pid_file";
+
+SELECT
 	current_setting('unix_socket_directories') AS "unix_socket_directories",
 	current_setting('unix_socket_permissions') AS "unix_socket_permissions",
 	current_setting('unix_socket_group') AS "unix_socket_group";
