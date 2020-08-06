@@ -17,9 +17,12 @@
 --
 -- Tested on PostgreSQL 12.3
 
+-- https://wiki.postgresql.org/wiki/Lock_Monitoring
+
 SELECT
   t.schemaname,
   t.relname,
+  -- l.database, -- id number is less useful, take schemaname from join instead
   l.locktype,
   page,
   virtualtransaction,
@@ -34,3 +37,11 @@ WHERE
   l.relation = t.relid
 ORDER BY
   relation ASC;
+
+SELECT
+  relation::regclass AS relation_regclass,
+  *
+FROM
+  pg_locks
+WHERE
+  NOT granted;
