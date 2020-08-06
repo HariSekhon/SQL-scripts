@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL file location settings
+-- Show PostgreSQL file location settings eg. config_file, hba_file, data_directory
 --
 -- Tested on PostgreSQL 12.3
 
