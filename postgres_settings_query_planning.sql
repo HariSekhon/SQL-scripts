@@ -17,13 +17,15 @@
 --
 -- Tested on PostgreSQL 12.3
 
+-- https://www.postgresql.org/docs/12/runtime-config-query.html
+
 SELECT
   name,
   setting,
-   category,
-  short_desc,
+  -- category,
   vartype,
-   enumvals,
+  short_desc,
+  -- enumvals,
   source,
   min_val,
   max_val,
