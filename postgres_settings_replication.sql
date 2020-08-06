@@ -35,4 +35,9 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Replication / Standby Servers
+  -- Replication / Sending Servers
+  -- Replication / Master Server
+  -- Replication / Subscribers
+  -- Replication
   category ILIKE '%Replication%';
