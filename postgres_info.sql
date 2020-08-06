@@ -31,11 +31,11 @@ SELECT
 SELECT
   pg_postmaster_start_time(),
   pg_conf_load_time(),
-	current_setting('logging_collector') AS "logging_collector",
-	current_setting('log_destination') AS "log_destination",
+  current_setting('logging_collector') AS "logging_collector",
+  current_setting('log_destination') AS "log_destination",
   pg_current_logfile(),
-	-- current_setting('log_directory') AS "log_directory",  -- log
-	-- current_setting('log_filename') AS "log_filename",    -- postgresql-%Y-%m-%d_%H%M%S.log
+  -- current_setting('log_directory') AS "log_directory",  -- log
+  -- current_setting('log_filename') AS "log_filename",    -- postgresql-%Y-%m-%d_%H%M%S.log
   pg_jit_available();
 
 -- SELECT pg_reload_conf(), pg_rotate_logfile();
@@ -64,24 +64,24 @@ SELECT
 -- SHOW one_param;
 
 SELECT
-	current_setting('config_file') AS "config_file",
-	current_setting('hba_file') AS "hba_file",
-	current_setting('ident_file') AS "ident_file";
+  current_setting('config_file') AS "config_file",
+  current_setting('hba_file') AS "hba_file",
+  current_setting('ident_file') AS "ident_file";
 
 SELECT
-	current_setting('data_directory') AS "data_directory",
-	current_setting('unix_socket_directories') AS "unix_socket_directories",
-	current_setting('unix_socket_permissions') AS "unix_socket_permissions",
-	current_setting('unix_socket_group') AS "unix_socket_group";
+  current_setting('data_directory') AS "data_directory",
+  current_setting('unix_socket_directories') AS "unix_socket_directories",
+  current_setting('unix_socket_permissions') AS "unix_socket_permissions",
+  current_setting('unix_socket_group') AS "unix_socket_group";
 
 SELECT
-	current_setting('shared_buffers') AS "shared_buffers",
-	current_setting('work_mem') AS "work_mem",
-	current_setting('max_connections') AS "max_connections",
-	current_setting('max_files_per_process') AS "max_files_per_process", -- should be less than ulimit nofiles to avoid “Too many open files” failures
-	current_setting('track_activities') AS "track_activities", -- for pg_stat / pg_statio family of system views that are used in many other adjacent scripts
-	current_setting('track_counts') AS "track_counts", -- needed for the autovacuum daemon
-	current_setting('password_encryption') AS "password_encryption";
+  current_setting('shared_buffers') AS "shared_buffers",
+  current_setting('work_mem') AS "work_mem",
+  current_setting('max_connections') AS "max_connections",
+  current_setting('max_files_per_process') AS "max_files_per_process", -- should be less than ulimit nofiles to avoid “Too many open files” failures
+  current_setting('track_activities') AS "track_activities", -- for pg_stat / pg_statio family of system views that are used in many other adjacent scripts
+  current_setting('track_counts') AS "track_counts", -- needed for the autovacuum daemon
+  current_setting('password_encryption') AS "password_encryption";
 
 
 -- ========================================================================== --
@@ -117,10 +117,10 @@ SELECT
   --( CASE WHEN pg_is_in_recovery() THEN pg_last_xact_replay_timestamp() END) AS "pg_last_xact_replay_timestamp()"
 
 --SELECT
---	pg_ls_logdir(),
---	pg_ls_waldir(),
---	pg_ls_archive_statusdir(),
---	pg_ls_tmpdir();
+--  pg_ls_logdir(),
+--  pg_ls_waldir(),
+--  pg_ls_archive_statusdir(),
+--  pg_ls_tmpdir();
 
 
 -- ========================================================================== --
