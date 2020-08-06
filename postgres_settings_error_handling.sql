@@ -22,10 +22,10 @@
 SELECT
   name,
   setting,
-   category,
+  -- category,
   vartype,
   short_desc,
-   enumvals,
+  -- enumvals,
   source,
   min_val,
   max_val,
