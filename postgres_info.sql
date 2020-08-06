@@ -69,6 +69,7 @@ SELECT
 	current_setting('ident_file') AS "ident_file";
 
 SELECT
+	current_setting('data_directory') AS "data_directory",
 	current_setting('unix_socket_directories') AS "unix_socket_directories",
 	current_setting('unix_socket_permissions') AS "unix_socket_permissions",
 	current_setting('unix_socket_group') AS "unix_socket_group";
@@ -87,6 +88,7 @@ SELECT
 --                                    U s e r
 -- ========================================================================== --
 
+-- in SQL the following have special syntax and should be called without parens: current_catalog, current_role, current_schema, current_user, session_user
 SELECT
   current_user,  -- aka user, current_role - this is the effective user for permission checking
   session_user,  -- connection user before superuser SET SESSION AUTHORIZATION
