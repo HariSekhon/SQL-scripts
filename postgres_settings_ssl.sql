@@ -20,6 +20,7 @@
 SELECT
   name,
   setting,
+  -- category
   short_desc,
   vartype,
   enumvals,
