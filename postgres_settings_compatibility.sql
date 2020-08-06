@@ -35,4 +35,6 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- Version and Platform Compatibility / Previous PostgreSQL Versions
+  -- Version and Platform Compatibility / Other Platforms and Clients
   category ILIKE '%Compatibility%';
