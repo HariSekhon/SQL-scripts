@@ -22,7 +22,7 @@
 SELECT
   name,
   setting,
-  -- category
+  -- category,
   vartype,
   short_desc,
   -- enumvals,
@@ -35,4 +35,5 @@ SELECT
 FROM
   pg_settings
 WHERE
+  -- File Locations
   category ILIKE '%File Locations%';
