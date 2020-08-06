@@ -22,8 +22,8 @@
 SELECT
   SUM(idx_blks_read) AS idx_read,
   SUM(idx_blks_hit)  AS idx_hit,
-					 SUM(idx_blks_hit) /
+           SUM(idx_blks_hit) /
   GREATEST(SUM(idx_blks_hit) + SUM(idx_blks_read), 1)::float
-							AS ratio
+              AS ratio
 FROM
   pg_statio_user_indexes;
