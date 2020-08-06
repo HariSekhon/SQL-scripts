@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Common MySQL funcs for quick info
+-- Useful MySQL funcs & info
 --
 -- Useful for debugging intended vs actual user auth to fix mysql.user table
 
