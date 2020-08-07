@@ -4,7 +4,7 @@
 --
 --  vim:ts=4:sts=4:sw=4:et:filetype=sql
 --
---  https://github.com/harisekhon/devops-bash-tools
+--  https://github.com/harisekhon/sql-scripts
 --
 --  License: see accompanying Hari Sekhon LICENSE file
 --
