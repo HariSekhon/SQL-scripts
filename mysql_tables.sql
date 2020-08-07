@@ -15,7 +15,7 @@
 
 -- MySQL tables across schemas, excluding information_schema, mysql and sys
 --
--- Tested on MySQL 8.0
+-- Tested on MySQL 8.0 and MariaDB 10.5
 
 SELECT
   table_schema,
