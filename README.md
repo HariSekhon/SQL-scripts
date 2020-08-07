@@ -16,7 +16,7 @@ Useful SQL scripts, split from [DevOps Bash tools](https://github.com/harisekhon
 - `mysql_*.sql` - [MySQL](https://www.mysql.com/) queries for DBA investigating + performance tuning
    - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects (intended `USER()` vs actual `CURRENT_USER()`)
 - `postgres_*.sql` - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
-   - `postgres_info.sql` - big summary overview, recommend you start here
+   - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
 
 You can quickly test the MySQL / PostgreSQL scripts using `mysqld.sh` / `postgres.sh` in the [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools) repo, which boots a docker container and drops in to `mysql` / `psql` shell with this directory mounted at `/sql` and used as `$PWD` for fast easy sourcing eg.
 
