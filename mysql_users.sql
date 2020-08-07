@@ -16,6 +16,8 @@
 -- List MySQL users ordered by host, user similar to auth resolution
 --
 -- Tested on MySQL 8.0
+--
+-- doesn't work on MariaDB 10.5, must use mariadb_users.sql instead
 
 SELECT
   host,
