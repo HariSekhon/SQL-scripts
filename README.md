@@ -11,6 +11,15 @@ SQL Scripts
 
 Useful SQL scripts, split from [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools), for which this is now a submodule.
 
+Hari Sekhon
+
+Cloud & Big Data Contractor, United Kingdom
+
+[![My LinkedIn](https://img.shields.io/badge/LinkedIn%20Profile-HariSekhon-blue?logo=linkedin)](https://www.linkedin.com/in/harisekhon/)
+###### (you're welcome to connect with me on LinkedIn)
+
+### Inventory
+
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
 - `mysql_*.sql` - [MySQL](https://www.mysql.com/) queries for DBA investigating + performance tuning
