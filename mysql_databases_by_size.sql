@@ -15,7 +15,7 @@
 
 -- MySQL databases by size descending
 --
--- Tested on MySQL 8.0
+-- Tested on MySQL 8.0 and MariaDB 10.5
 
 SELECT
   table_schema,
