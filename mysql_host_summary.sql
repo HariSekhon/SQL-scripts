@@ -20,6 +20,7 @@
 SELECT
   *
 FROM
+  -- sys doesn't exist on MariaDB 10.5
   sys.host_summary
 ORDER BY
   statement_latency DESC;
