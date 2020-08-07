@@ -1,9 +1,15 @@
 SQL Scripts
 ===========
 
+[![PostgreSQL](https://img.shields.io/badge/Database-PostreSQL-336791?logo=postgresql)](https://www.postgresql.org/)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql)](https://www.mysql.com/)
+[![MariaDB](https://img.shields.io/badge/Database-MariaDB-003545?logo=mariadb)](https://mariadb.org/)
+[![AWS Athena](https://img.shields.io/badge/Database-AWS%20Athena-232F3E?logo=amazon%20aws)](https://aws.amazon.com/athena/)
+[![Google BigQuery](https://img.shields.io/badge/Database-Google%20BigQuery-4285F4?logo=google%20cloud)](https://cloud.google.com/bigquery)
+[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-2.8k-lightgrey)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
+
 [![Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Mac](https://img.shields.io/badge/OS-Mac-blue?logo=apple)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
-[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-2.8k-lightgrey)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-blue?logo=github)](https://github.com/HariSekhon/SQL-scripts)
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-blue?logo=gitlab)](https://gitlab.com/HariSekhon/SQL-scripts)
 [![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-blue?logo=bitbucket)](https://bitbucket.org/HariSekhon/SQL-scripts)
@@ -22,7 +28,7 @@ Cloud & Big Data Contractor, United Kingdom
 
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
-- `mysql_*.sql` - [MySQL](https://www.mysql.com/) queries for DBA investigating + performance tuning
+- `mysql_*.sql` - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/) queries for DBA investigating + performance tuning
    - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects (intended `USER()` vs actual `CURRENT_USER()`)
 - `postgres_*.sql` - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
    - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
