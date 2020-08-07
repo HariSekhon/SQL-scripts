@@ -20,6 +20,7 @@
 SELECT
   *
 FROM
+  -- doesn't exist in MariaDB 10.5
   schema_unused_indexes
 ORDER BY
   object_schema,
