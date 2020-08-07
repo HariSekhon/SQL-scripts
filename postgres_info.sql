@@ -20,6 +20,8 @@
 -- https://www.postgresql.org/docs/12/functions.html
 
 -- ========================================================================== --
+--                                 V e r s i o n
+-- ========================================================================== --
 
 -- version() returns a long human readable string, hence we split from others SELECTs eg.
 -- PostgreSQL 12.3 (Debian 12.3-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
@@ -27,6 +29,10 @@ SELECT
   version(),
   current_setting('server_version') AS "server_version",
   current_setting('server_version_num') AS "server_version_num";
+
+-- ========================================================================== --
+--                          S e r v e r   D e t a i l s
+-- ========================================================================== --
 
 SELECT
   pg_postmaster_start_time(),
@@ -74,6 +80,10 @@ SELECT
   current_setting('unix_socket_permissions') AS "unix_socket_permissions",
   current_setting('unix_socket_group') AS "unix_socket_group";
 
+-- ========================================================================== --
+--                   B u f f e r s   &   C o n n e c t i o n s
+-- ========================================================================== --
+
 SELECT
   current_setting('shared_buffers') AS "shared_buffers",
   current_setting('work_mem') AS "work_mem",
@@ -101,7 +111,7 @@ SELECT current_schemas(true) AS "current_schemas(true) - auto-searched schemas";
 
 
 -- ========================================================================== --
---                               Backup & Recovery
+--                       B a c k u p   &   R e c o v e r y
 -- ========================================================================== --
 
 SELECT
