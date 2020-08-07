@@ -20,6 +20,7 @@
 SELECT
   *
 FROM
+  -- sys doesn't exist in MariaDB 10.5
   sys.memory_by_host_by_current_bytes
 WHERE
   host <> 'background'
