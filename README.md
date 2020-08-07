@@ -45,9 +45,9 @@ since the `$PWD` is set to `/sql` for convenience.
 
 #### See Also:
 
-- `mysql.sh` / `psql.sh` - quickly connect to MySQL / PostgreSQL without command line options by auto-inferring switches from environment variables
-- `mysqld.sh` / `postgres.sh` - one-touch test environments for MySQL / PostgreSQL, boots docker container and drops you in to `mysql` / `psql` shell
-- `sqlcase.pl` - autocases your SQL code
+- [mysql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql.sh) / [psql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/psql.sh) - quickly connect to MySQL / PostgreSQL without command line options by auto-inferring switches from environment variables
+- [mysqld.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysqld.sh) / [postgres.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres.sh) - one-touch test environments for MySQL / PostgreSQL, boots docker container and drops you in to `mysql` / `psql` shell
+- [sqlcase.pl](https://github.com/HariSekhon/DevOps-Perl-tools/blob/master/sqlcase.pl) - autocases your SQL code
   - I use this a lot and call it via hotkey configured in my [.vimrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.vimrc)
   - there are `*case.pl` specializations for most of the major RDBMS and distributed SQL systems, even several NoSQL systems, using each one's language specific keywords
 
