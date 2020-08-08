@@ -1,0 +1,31 @@
+--
+--  Author: Hari Sekhon
+--  Date: 2020-08-08 09:54:19 +0100 (Sat, 08 Aug 2020)
+--
+--  vim:ts=2:sts=2:sw=2:et:filetype=sql
+--
+--  https://github.com/harisekhon/sql
+--
+--  License: see accompanying Hari Sekhon LICENSE file
+--
+--  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
+--
+--  https://www.linkedin.com/in/harisekhon
+--
+
+-- MySQL views across schemas
+--
+-- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.5
+
+SELECT
+  -- table_catalog,
+  table_schema,
+  table_name,
+  IS_UPDATABLE,
+  DEFINER,
+  SECURITY_TYPE
+FROM
+  information_schema.views
+ORDER BY
+  table_schema,
+  table_name;
