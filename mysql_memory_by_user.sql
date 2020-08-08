@@ -20,7 +20,7 @@
 SELECT
   *
 FROM
-  -- sys doesn't exist in MariaDB 10.5
+  -- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
   sys.memory_by_user_by_current_bytes
 WHERE
   user <> 'background'
