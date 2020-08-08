@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- MySQL views across schemas
+-- MySQL views across schemas (useful for finding views)
 --
 -- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.5
 
