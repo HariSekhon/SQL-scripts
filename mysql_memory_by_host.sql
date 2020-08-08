@@ -16,11 +16,12 @@
 -- MySQL memory used per host
 --
 -- Tested on MySQL 5.7, 8.0
+--
+-- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
 
 SELECT
   *
 FROM
-  -- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
   sys.memory_by_host_by_current_bytes
 WHERE
   host <> 'background'
