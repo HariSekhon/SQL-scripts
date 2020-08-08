@@ -15,7 +15,7 @@
 
 -- MySQL show activity per user
 --
--- Tested on MySQL 8.0
+-- Tested on MySQL 5.7, 8.0
 
 SELECT
   *

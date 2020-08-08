@@ -20,7 +20,7 @@
 SELECT
   *
 FROM
-  -- doesn't exist in MariaDB 10.5
+  -- doesn't exist in MySQL 5.7 or MariaDB 10.5
   schema_unused_indexes
 ORDER BY
   object_schema,
