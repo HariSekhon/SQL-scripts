@@ -17,7 +17,7 @@
 --
 -- Useful for debugging intended vs actual user auth to fix mysql.user table
 
--- Tested on MySQL 5.7, 8.0 and MariaDB 10.5
+-- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.5
 
 -- https://dev.mysql.com/doc/refman/8.0/en/sql-function-reference.html
 
