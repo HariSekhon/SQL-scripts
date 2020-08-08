@@ -15,13 +15,14 @@
 
 -- MySQL unused indexes
 --
--- Tested on MySQL 8.0
+-- Tested on MySQL 5.7, 8.0
+--
+-- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
 
 SELECT
   *
 FROM
-  -- doesn't exist in MySQL 5.6, 5.7 or MariaDB 10.5
-  schema_unused_indexes
+  sys.schema_unused_indexes
 ORDER BY
   object_schema,
   object_name,
