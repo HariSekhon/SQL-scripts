@@ -16,11 +16,12 @@
 -- MySQL statement latency stats per user
 --
 -- Tested on MySQL 5.7, 8.0
+--
+-- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
 
 SELECT
   *
 FROM
-  -- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
   sys.user_summary_by_statement_latency
 ORDER BY
   total_latency DESC;
