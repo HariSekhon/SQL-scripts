@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- MySQL tables across schemas, excluding information_schema, mysql and sys
+-- MySQL tables across schemas (useful for finding tables)
 --
 -- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.5
 
@@ -35,7 +35,7 @@ SELECT
 FROM
   information_schema.tables
 WHERE
-  table_schema NOT IN ('mysql', 'sys', 'information_schema', 'performance_schema')
+  table_type <> 'VIEW'
 ORDER BY
   table_schema,
   table_name;
