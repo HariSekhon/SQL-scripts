@@ -20,7 +20,7 @@
 SELECT
   *
 FROM
-  -- sys doesn't exist in MariaDB 10.5
+  -- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
   sys.user_summary_by_statement_latency
 ORDER BY
   total_latency DESC;
