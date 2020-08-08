@@ -23,7 +23,7 @@ SELECT
   max_connections,
   max_user_connections,
   password_expired
-  -- these fields don't exist in MySQL <= 5.7 / MariaDB 10.5
+  -- these fields don't exist in MySQL < 8.0 / MariaDB 10.5
   -- password_last_changed,
   -- password_lifetime,
   -- account_locked,
