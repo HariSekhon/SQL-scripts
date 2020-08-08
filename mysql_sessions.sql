@@ -41,7 +41,7 @@ SELECT
   trx_latency,
   trx_state
 FROM
-  -- sys doesn't exist in MariaDB 10.5
+  -- sys doesn't exist in MySQL 5.6 or MariaDB 10.5
   sys.session
 WHERE
   user <> 'sql/event_scheduler'
