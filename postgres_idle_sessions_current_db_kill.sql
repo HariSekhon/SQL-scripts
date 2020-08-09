@@ -42,3 +42,4 @@ WHERE
       OR
     (query_start IS NULL AND (current_timestamp - backend_start) > interval '15 minutes')
   )
+;
