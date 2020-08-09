@@ -15,7 +15,7 @@
 
 -- MySQL tables across schemas, excluding information_schema, mysql and sys
 --
--- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.5
+-- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.0 - 10.5
 
 SELECT
   table_schema,
@@ -35,7 +35,7 @@ SELECT
 FROM
   information_schema.tables
 WHERE
-  table_type <> 'VIEW'
+  table_type NOT LIKE '%VIEW%'
   AND
   table_schema NOT IN ('mysql', 'sys', 'information_schema', 'performance_schema')
 ORDER BY
