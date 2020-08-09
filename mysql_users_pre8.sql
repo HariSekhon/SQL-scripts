@@ -15,7 +15,7 @@
 
 -- List MySQL users ordered by host, user similar to auth resolution
 --
--- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.5
+-- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.0 - 10.5
 
 SELECT
   host,
@@ -23,7 +23,7 @@ SELECT
   max_connections,
   max_user_connections,
   password_expired
-  -- these fields don't exist in MySQL < 8.0 / MariaDB 10.5
+  -- these fields don't exist in MySQL < 8.0 / MariaDB 10
   -- password_last_changed,
   -- password_lifetime,
   -- account_locked,
