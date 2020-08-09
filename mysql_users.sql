@@ -17,7 +17,7 @@
 --
 -- Tested on MySQL 8.0
 --
--- some fields doesn't exist on MySQL < 8.0 and MariaDB 10.5, must use mysql_users_pre8.sql instead
+-- some fields doesn't exist on MySQL < 8.0 and MariaDB 10.0 - 10.5, must use mysql_users_pre8.sql instead
 
 SELECT
   host,
