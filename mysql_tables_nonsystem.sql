@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- MySQL tables across schemas, excluding information_schema, mysql and sys
+-- MySQL tables across schemas, excluding system tables such as information_schema, performance_schema, mysql and sys
 --
 -- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.0 - 10.5
 
