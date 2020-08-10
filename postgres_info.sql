@@ -15,6 +15,8 @@
 
 -- Useful PostgreSQL functions & info
 --
+-- Requires PostgreSQL 10+ (see postgres_info_pre10.sql for PostgreSQL 8/9)
+--
 -- Tested on PostgreSQL 10.x, 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/functions.html
