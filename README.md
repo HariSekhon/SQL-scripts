@@ -6,7 +6,7 @@ SQL Scripts
 [![MariaDB](https://img.shields.io/badge/Database-MariaDB-003545?logo=mariadb)](https://mariadb.org/)
 [![AWS Athena](https://img.shields.io/badge/Database-AWS%20Athena-232F3E?logo=amazon%20aws)](https://aws.amazon.com/athena/)
 [![Google BigQuery](https://img.shields.io/badge/Database-Google%20BigQuery-4285F4?logo=google%20cloud)](https://cloud.google.com/bigquery)
-[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-3k-lightgrey)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
+[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-3k-lightgrey?logo=codecademy)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 
 [![Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Mac](https://img.shields.io/badge/OS-Mac-blue?logo=apple)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
