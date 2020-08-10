@@ -15,7 +15,7 @@
 
 -- Useful PostgreSQL functions & info
 --
--- Tested on PostgreSQL 12.3
+-- Tested on PostgreSQL 10.x, 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/functions.html
 
@@ -39,10 +39,15 @@ SELECT
   pg_conf_load_time(),
   current_setting('logging_collector') AS "logging_collector",
   current_setting('log_destination') AS "log_destination",
-  pg_current_logfile(),
+  -- not available in Postgres 9
+  -- doesn't work because it still checks if pg_current_logfile() is valid and neither eval or execute seem to work around this
+  -- CASE WHEN current_setting('server_version_num')::int > 100000 THEN pg_current_logfile() ELSE NULL END as pg_current_logfile
+  pg_current_logfile()
   -- current_setting('log_directory') AS "log_directory",  -- log
   -- current_setting('log_filename') AS "log_filename",    -- postgresql-%Y-%m-%d_%H%M%S.log
-  pg_jit_available();
+  -- not available on Postgres 10
+  --pg_jit_available()
+;
 
 -- SELECT pg_reload_conf(), pg_rotate_logfile();
 
