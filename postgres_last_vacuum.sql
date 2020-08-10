@@ -15,7 +15,9 @@
 
 -- PostgreSQL Vacuum info for tables with deleted rows
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.1+ (see postgres_last_vacuum_pre91.sql for earlier versions)
+--
+-- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x
 
 SELECT
   schemaname,
@@ -25,10 +27,13 @@ SELECT
   n_dead_tup / GREATEST(n_live_tup + n_dead_tup, 1)::float * 100 AS dead_percentage,
   last_vacuum,
   last_autovacuum,
+  -- not available on PostgreSQL <= 9.0
   vacuum_count,
   autovacuum_count
 FROM pg_stat_user_tables
 WHERE
   n_dead_tup > 0
 ORDER BY
-  n_dead_tup DESC;
+  n_dead_tup DESC,
+  last_vacuum DESC,
+  last_autovacuum DESC;
