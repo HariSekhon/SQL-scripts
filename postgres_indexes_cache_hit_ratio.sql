@@ -17,11 +17,11 @@
 --
 -- should be closer to 1, eg. 0.99
 --
--- Tested on PostgreSQL 12.3
+-- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
 
 SELECT
-  SUM(idx_blks_read) AS idx_read,
-  SUM(idx_blks_hit)  AS idx_hit,
+  SUM(idx_blks_read) AS idx_blks_read,
+  SUM(idx_blks_hit)  AS idx_blks_hit,
            SUM(idx_blks_hit) /
   GREATEST(SUM(idx_blks_hit) + SUM(idx_blks_read), 1)::float
               AS ratio
