@@ -15,7 +15,9 @@
 
 -- PostgreSQL Vacuum and Analyze info
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.4+ (see postgres_last_vacuum_analyze_pre94.sql for earlier versions)
+--
+-- Tested on PostgreSQL 9.4+, 10.x, 11.x, 12.x
 
 SELECT
   schemaname,
@@ -32,7 +34,12 @@ SELECT
   autovacuum_count,
   analyze_count,
   autoanalyze_count
-FROM pg_stat_user_tables
+FROM
+  pg_stat_user_tables
 ORDER BY
   n_dead_tup DESC,
-  n_mod_since_analyze DESC;
+  n_mod_since_analyze DESC,
+  last_vacuum DESC,
+  last_analyze DESC,
+  last_autovacuum DESC,
+  last_autoanalyze DESC;
