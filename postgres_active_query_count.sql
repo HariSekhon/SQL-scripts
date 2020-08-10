@@ -17,7 +17,9 @@
 --
 -- if consistently > CPU Cores, then upgrade/scale
 --
--- Tested on PostgreSQL 12.3
+-- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x
+--
+-- doesn't work on PostgreSQL <= 9.1 since state column doesn't exist
 
 SELECT
   COUNT(*) as active_query_count
