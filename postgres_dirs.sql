@@ -15,7 +15,9 @@
 
 -- Useful PostgreSQL dir info
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL >= 11.9
+--
+-- Tested on PostgreSQL 11.9, 12.x
 
 SELECT
   current_setting('config_file') AS "config_file",
@@ -32,12 +34,14 @@ SELECT
   current_setting('unix_socket_group') AS "unix_socket_group";
 
 SELECT
+  -- not available on PostgreSQL < 10
   pg_current_logfile(),
   current_setting('log_directory') AS "log_directory",  -- log
   current_setting('log_filename') AS "log_filename";    -- postgresql-%Y-%m-%d_%H%M%S.log
 
 SELECT
-  --CASE WHEN pg_current_logfile() IS NOT NULL THEN pg_ls_logdir() END AS pg_ls_logdir,
+  -- CASE WHEN pg_current_logfile() IS NOT NULL THEN pg_ls_logdir() END AS pg_ls_logdir,
   pg_ls_waldir(),
+  -- not available on PostgreSQL <= 11.8
   pg_ls_archive_statusdir(),
   pg_ls_tmpdir();
