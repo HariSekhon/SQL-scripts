@@ -35,7 +35,8 @@ SELECT
   -- not available on PostgreSQL <= 9.0
   --analyze_count,
   --autoanalyze_count
-FROM pg_stat_user_tables
+FROM
+  pg_stat_user_tables
 ORDER BY
   n_dead_tup DESC,
   last_vacuum DESC,
