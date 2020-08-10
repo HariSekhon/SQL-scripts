@@ -19,7 +19,9 @@
 --
 -- SELECT pg_terminate_backend(pid)
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.2+
+--
+-- Tested on PostgreSQL 9.2, 10.x, 11.x, 12.x
 
 SELECT
   rank() over (partition by client_addr order by backend_start ASC) as rank,
