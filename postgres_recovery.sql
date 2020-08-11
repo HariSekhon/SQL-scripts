@@ -15,7 +15,9 @@
 
 -- PostgreSQL recovery info
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 10+
+--
+-- Tested on PostgreSQL 10.x, 11.x, 12.x
 
 SELECT
   pg_is_in_backup(),
