@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL Replication settings eg. hot_standby, max_replication_slots, max_wal_senders etc.
+-- Show PostgreSQL Replication settings
+--
+-- eg. hot_standby, max_replication_slots, max_wal_senders etc.
 --
 -- Requires PostgreSQL 9.5+
 --
