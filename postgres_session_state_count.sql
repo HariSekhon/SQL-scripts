@@ -15,7 +15,9 @@
 
 -- PostgreSQL count of sessions in each state
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.2+
+--
+-- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x
 
 SELECT
   count(1),
