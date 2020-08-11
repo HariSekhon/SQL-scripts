@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL auto vacuum settings eg. autovacuum, log_autovacuum_min_duration, autovacuum_naptime, autovacuum_max_workers, autovacuum_vacuum_threshold, autovacuum_analyze_threshold
+-- Show PostgreSQL auto vacuum settings
+--
+-- eg. autovacuum, log_autovacuum_min_duration, autovacuum_naptime, autovacuum_max_workers, autovacuum_vacuum_threshold, autovacuum_analyze_threshold
 --
 -- Requires PostgreSQL 9.5+
 --
