@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL memory resource settings eg. shared_buffers, work_mem, huge_pages, temp_buffers, maintenance_work_mem
+-- Show PostgreSQL memory resource settings
+--
+-- eg. shared_buffers, work_mem, huge_pages, temp_buffers, maintenance_work_mem
 --
 -- Requires PostgreSQL 9.5+
 --
