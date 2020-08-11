@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL Query Tuning & Query Statistics Collection settings eg. enable_indexscan, enable_hashjoin, jit, track_activities, track_counts
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-query.html
 
