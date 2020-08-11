@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL logging settings eg. log_destination, logging_collector, log_rotation_age, log_filename (format), log_connections, log_hostname, log_disconnections, log_checkpoints, log_lock_waits etc.
+-- Show PostgreSQL logging settings
+--
+-- eg. log_destination, logging_collector, log_rotation_age, log_filename (format), log_connections, log_hostname, log_disconnections, log_checkpoints, log_lock_waits etc.
 --
 -- Requires PostgreSQL 9.5+
 --
