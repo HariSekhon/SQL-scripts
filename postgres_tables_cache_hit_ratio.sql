@@ -19,7 +19,7 @@
 --
 -- otherwise increase 'shared_buffer' size (should be at least 25% of total RAM for a dedicated DB server)
 --
--- Tested on PostgreSQL 12.3
+-- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
 
 SELECT
   SUM(heap_blks_read) AS heap_blks_read,
