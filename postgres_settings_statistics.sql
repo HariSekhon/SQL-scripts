@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL statistics collection settings eg. track_activities, track_counts, log_planner_stats, log_statement_stats
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-statistics.html
 
