@@ -24,6 +24,7 @@ SELECT
   user,
   max_connections,
   max_user_connections,
+  -- not available on MySQL 5.5
   password_expired
   -- these fields don't exist in MySQL < 8.0 / MariaDB 10
   -- password_last_changed,
