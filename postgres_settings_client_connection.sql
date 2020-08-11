@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL client connection default settings eg. client_min_messages, transaction_isolation / default_transaction_isolation, statement_timeout, lock_timeout, TimeZone, lc_ctype, server_encoding, search_path
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-client.html
 
