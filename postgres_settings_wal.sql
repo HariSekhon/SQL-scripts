@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL WAL settings eg. fsync, wal_level, wal_buffers, wal_sync_method, synchronous_commit, checkpoint_timeout, archive_mode etc.
+-- Show PostgreSQL WAL settings
+--
+-- eg. fsync, wal_level, wal_buffers, wal_sync_method, synchronous_commit, checkpoint_timeout, archive_mode etc.
 --
 -- Requires PostgreSQL 9.5+
 --
