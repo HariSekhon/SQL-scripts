@@ -16,6 +16,7 @@
 -- MySQL show activity per host
 --
 -- Requires MySQL 5.7+
+-- Requires MariaDB N/A
 --
 -- Tested on MySQL 5.7, 8.0
 --

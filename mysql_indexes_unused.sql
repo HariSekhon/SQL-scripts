@@ -16,6 +16,7 @@
 -- MySQL unused indexes
 --
 -- Requires MySQL 5.7+
+-- Requires MariaDB N/A
 --
 -- Tested on MySQL 5.7, 8.0
 --
