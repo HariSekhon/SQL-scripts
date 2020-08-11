@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL logging settings eg. log_destination, logging_collector, log_rotation_age, log_filename (format), log_connections, log_hostname, log_disconnections, log_checkpoints, log_lock_waits etc.
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-logging.html
 
