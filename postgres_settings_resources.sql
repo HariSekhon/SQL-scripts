@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL resource settings eg. shared_buffers, work_mem, max_files_per_process
+-- Show PostgreSQL resource settings
+--
+-- eg. shared_buffers, work_mem, max_files_per_process
 --
 -- Requires PostgreSQL 9.5+
 --
