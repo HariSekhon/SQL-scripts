@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL lock settings eg. deadlock_timeout, max_locks_per_transaction
+-- Show PostgreSQL lock settings
+--
+-- eg. deadlock_timeout, max_locks_per_transaction
 --
 -- Requires PostgreSQL 9.5+
 --
