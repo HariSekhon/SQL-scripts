@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- PostgreSQL locks with query and age for PostgreSQL < 9
+-- PostgreSQL locks with query and age for PostgreSQL <= 9.1
 --
 -- Requires PostgreSQL <= 9.1 (for newer versions see postgres_locks_query_age.sql)
 --
