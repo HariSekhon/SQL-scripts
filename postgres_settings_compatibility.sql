@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL version and platform compatibility settings eg. backslash_quote, escape_string_warning, transform_null_equals
+-- Show PostgreSQL version and platform compatibility settings
+--
+-- eg. backslash_quote, escape_string_warning, transform_null_equals
 --
 -- Requires PostgreSQL 9.5+
 --
