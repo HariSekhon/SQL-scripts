@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL authentication settings eg. password_encryption, krb_server_keyfile
+-- Show PostgreSQL authentication settings
+--
+-- eg. password_encryption, krb_server_keyfile
 --
 -- Requires PostgreSQL 9.5+
 --
