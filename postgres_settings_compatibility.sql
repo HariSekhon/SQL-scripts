@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL version and platform compatibility settings eg. backslash_quote, escape_string_warning, transform_null_equals
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-compatible.html
 
