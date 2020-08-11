@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL auto vacuum settings eg. autovacuum, log_autovacuum_min_duration, autovacuum_naptime, autovacuum_max_workers, autovacuum_vacuum_threshold, autovacuum_analyze_threshold
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-autovacuum.html
 
