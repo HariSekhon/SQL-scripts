@@ -35,6 +35,7 @@ SELECT
   max_val,
   boot_val,
   reset_val,
+  -- not available on PostgreSQL < 9.5
   pending_restart
 FROM
   pg_settings
