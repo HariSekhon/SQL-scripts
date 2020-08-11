@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL memory resource settings eg. shared_buffers, work_mem, huge_pages, temp_buffers, maintenance_work_mem
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-MEMORY
 
