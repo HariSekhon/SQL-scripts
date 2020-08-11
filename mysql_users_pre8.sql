@@ -16,6 +16,7 @@
 -- List MySQL users ordered by host, user similar to auth resolution
 --
 -- Requires MySQL 5.6+
+-- Requires MariaDB 10
 --
 -- Tested on MySQL 5.6, 5.7, 8.0 and MariaDB 10.0 - 10.5
 
