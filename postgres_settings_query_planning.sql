@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL Query Tuning & Query Statistics Collection settings eg. enable_indexscan, enable_hashjoin, jit, track_activities, track_counts
+-- Show PostgreSQL Query Tuning & Query Statistics Collection settings
+--
+-- eg. enable_indexscan, enable_hashjoin, jit, track_activities, track_counts
 --
 -- Requires PostgreSQL 9.5+
 --
