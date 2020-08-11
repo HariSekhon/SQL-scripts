@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL Replication settings eg. hot_standby, max_replication_slots, max_wal_senders etc.
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-replication.html
 
