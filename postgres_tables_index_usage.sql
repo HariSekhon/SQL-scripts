@@ -17,7 +17,7 @@
 --
 -- If not near 99% index usage on tables > 10,000 rows, consider adding an index to match your query patterns (CREATE INDEX CONCURRENTLY in prod to avoid locking table)
 --
--- Tested on PostgreSQL 12.3
+-- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
 
 SELECT
   relname AS table,
