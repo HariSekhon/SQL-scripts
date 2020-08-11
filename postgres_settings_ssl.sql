@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL SSL settings eg. ssl on/off, ssl_cert_file, ssl_ciphers etc.
+-- Show PostgreSQL SSL settings
+--
+-- eg. ssl on/off, ssl_cert_file, ssl_ciphers etc.
 --
 -- Requires PostgreSQL 9.5+
 --
