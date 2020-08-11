@@ -17,14 +17,19 @@
 --
 -- a current snapshot alternative to slow query log
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.6+ (see postgres_queries_slow_pre96.sql and postgres_queries_slow_pre92.sql)
+--
+-- Tested on PostgreSQL 9.6+, 10x, 11.x, 12.x
 
 SELECT
   now() - query_start as "runtime",
   usename,
   datname,
+  -- not available on PostgreSQL < 9.6
   wait_event,
+  -- not available on PostgreSQL < 9.2
   state,
+  -- current_query on PostgreSQL < 9.2
   query
 FROM
   pg_stat_activity
