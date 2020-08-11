@@ -15,6 +15,8 @@
 
 -- Running queries for PostgreSQL <= 9.1
 --
+-- Requires PostgreSQL <= 9.1
+--
 -- Tested on PostgreSQL 8.4, 9.0, 9.1
 
 SELECT
