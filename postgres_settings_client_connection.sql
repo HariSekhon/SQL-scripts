@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL client connection default settings eg. client_min_messages, transaction_isolation / default_transaction_isolation, statement_timeout, lock_timeout, TimeZone, lc_ctype, server_encoding, search_path
+-- Show PostgreSQL client connection default settings
+--
+-- eg. client_min_messages, transaction_isolation / default_transaction_isolation, statement_timeout, lock_timeout, TimeZone, lc_ctype, server_encoding, search_path
 --
 -- Requires PostgreSQL 9.5+
 --
