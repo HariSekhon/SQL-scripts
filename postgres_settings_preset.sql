@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL preset options settings eg. block_size, wal_block_size, data_checksums, server_version, server_version_num, ssl_library
+-- Show PostgreSQL preset options settings
+--
+-- eg. block_size, wal_block_size, data_checksums, server_version, server_version_num, ssl_library
 --
 -- Requires PostgreSQL 9.5+
 --
