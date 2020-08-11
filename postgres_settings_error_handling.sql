@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL error handling settings eg. exit_on_error, restart_after_crash
+-- Show PostgreSQL error handling settings
+--
+-- eg. exit_on_error, restart_after_crash
 --
 -- Requires PostgreSQL 9.5+
 --
