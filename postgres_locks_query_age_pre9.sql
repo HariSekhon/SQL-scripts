@@ -14,6 +14,10 @@
 --
 
 -- PostgreSQL locks with query and age for PostgreSQL < 9
+--
+-- Requires PostgreSQL <= 9.1 (for newer versions see postgres_locks_query_age.sql)
+--
+-- Tested on PostgreSQL 8.4, 9.0, 9.1
 
 -- https://wiki.postgresql.org/wiki/Lock_Monitoring
 
