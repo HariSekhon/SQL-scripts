@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL misc settings eg. Customized Options, Process Title
+-- Show PostgreSQL misc settings
+--
+-- eg. Customized Options, Process Title
 --
 -- Selects the inverse of all adacent postgres_settings_*.sql scripts to find any new / unknown / misc settings
 --
