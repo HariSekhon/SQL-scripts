@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL statistics collection settings eg. track_activities, track_counts, log_planner_stats, log_statement_stats
+-- Show PostgreSQL statistics collection settings
+--
+-- eg. track_activities, track_counts, log_planner_stats, log_statement_stats
 --
 -- Requires PostgreSQL 9.5+
 --
