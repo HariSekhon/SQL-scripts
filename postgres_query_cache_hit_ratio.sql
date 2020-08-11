@@ -15,7 +15,9 @@
 
 -- PostgreSQL queries cache-hit ratio from pg_stat_statements
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.1+
+--
+-- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x
 
 -- postgresql.conf needs before start:
 -- shared_preload_libraries = 'pg_stat_statements'
