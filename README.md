@@ -13,7 +13,7 @@ SQL Scripts
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-blue?logo=github)](https://github.com/HariSekhon/SQL-scripts)
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-blue?logo=gitlab)](https://gitlab.com/HariSekhon/SQL-scripts)
 [![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-blue?logo=bitbucket)](https://bitbucket.org/HariSekhon/SQL-scripts)
-[![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
+[![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
 
 Useful SQL scripts, split from [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools), for which this is now a submodule.
 
