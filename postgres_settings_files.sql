@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL file location settings eg. config_file, hba_file, data_directory
+-- Show PostgreSQL file location settings
+--
+-- eg. config_file, hba_file, data_directory
 --
 -- Requires PostgreSQL 9.5+
 --
