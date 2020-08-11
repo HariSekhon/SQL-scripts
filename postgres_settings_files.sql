@@ -15,7 +15,9 @@
 
 -- Show PostgreSQL file location settings eg. config_file, hba_file, data_directory
 --
--- Tested on PostgreSQL 12.3
+-- Requires PostgreSQL 9.5+
+--
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
 
 -- https://www.postgresql.org/docs/12/runtime-config-file-locations.html
 
