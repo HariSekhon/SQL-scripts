@@ -53,3 +53,6 @@ test:
 .PHONY: push
 push:
 	git push --all
+
+wc:
+	@wc -l $(CODE_FILES)
