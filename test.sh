@@ -25,10 +25,6 @@ if ! type -P mysql_test_scripts.sh &>/dev/null ||
     curl https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/setup/bootstrap.sh | sh
 fi
 
-export MYSQL_CONTAINER_NAME=mysql-scripts-test
-export MARIADB_CONTAINER_NAME=mariadb-scripts-test
-export POSTGRES_CONTAINER_NAME=postgres-scripts-test
-
 export PATH="$PATH:$srcdir/bash-tools"
 
 mysql_test_scripts.sh
