@@ -43,6 +43,7 @@ build: init
 	else \
 		curl https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/setup/bootstrap.sh | sh; \
 	fi
+	@echo
 
 .PHONY: init
 init:
