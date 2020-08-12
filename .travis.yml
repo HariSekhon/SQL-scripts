@@ -41,4 +41,6 @@ install:
   - travis_retry make
 
 script:
-  - travis_retry make test
+  # would breach the max log length anyway and just obscure the real error
+  #- travis_retry make test
+  - make test
