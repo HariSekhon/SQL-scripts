@@ -3,7 +3,7 @@
 #  Author: Hari Sekhon
 #  Date: 2020-08-12 12:31:25 +0100 (Wed, 12 Aug 2020)
 #
-#  https://github.com/harisekhon/bash-tools
+#  https://github.com/harisekhon/sql
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
@@ -18,7 +18,8 @@ version: ~> 1.0
 language: bash
 os:
   - linux
-  - osx
+  # needs docker and osx on Travis CI doesn't have docker
+  #- osx
 
 notifications:
   email: false
