@@ -29,6 +29,8 @@ export MYSQL_CONTAINER_NAME=mysql-scripts-test
 export MARIADB_CONTAINER_NAME=mariadb-scripts-test
 export POSTGRES_CONTAINER_NAME=postgres-scripts-test
 
+export PATH="$PATH:$srcdir/bash-tools"
+
 mysql_test_scripts.sh
 
 postgres_test_scripts.sh
