@@ -56,3 +56,5 @@ push:
 
 wc:
 	@wc -l $(CODE_FILES)
+	@printf "\nSQL Scripts: "
+	@tr ' ' '\n' <<< "$(CODE_FILES)" | wc -l | sed 's/[[:space:]]//g'
