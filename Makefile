@@ -15,6 +15,8 @@
 # fails to bootstrap on Alpine
 #SHELL := /usr/bin/env bash
 
+PATH := "$(PATH):$(PWD)/bash-tools"
+
 REPO := HariSekhon/SQL-scripts
 
 CODE_FILES := $(shell find . -type f -name '*.sql')
@@ -34,9 +36,13 @@ build: init
 	@echo "SQL Scripts"
 	@echo "==========="
 	@echo
-	@echo "No build required"
-	@#$(MAKE) git-summary
-	@#$(MAKE) system-packages
+	@if command -v mysql_test_scripts.sh &>/dev/null && \
+	   command -v mariadb_test_scripts.sh &>/dev/null && \
+	   command -v postgres_test_scripts.sh &>/dev/null; then \
+		echo 'DevOps Bash Tools appears to be in $$PATH, no further building needed'; \
+	else \
+		curl https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/setup/bootstrap.sh | sh; \
+	fi
 
 .PHONY: init
 init:
