@@ -1,0 +1,43 @@
+#  vim:ts=2:sts=2:sw=2:et
+#
+#  Author: Hari Sekhon
+#  Date: 2020-08-12 12:31:25 +0100 (Wed, 12 Aug 2020)
+#
+#  https://github.com/harisekhon/bash-tools
+#
+#  License: see accompanying Hari Sekhon LICENSE file
+#
+#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
+#  to help improve or steer this or other code I publish
+#
+#  http://www.linkedin.com/in/harisekhon
+#
+
+version: ~> 1.0
+
+language: bash
+os:
+  - linux
+  - osx
+
+notifications:
+  email: false
+
+branches:
+  only:
+    - master
+
+cache:
+  - directories:
+    - .cache          # yamllint disable-line rule:indentation
+
+# avoid package checksum mismatches when installing packages
+before_install:
+  - sudo rm -f "${TRAVIS_ROOT}/etc/apt/apt.conf.d/99-travis-apt-proxy"
+  - sudo rm -rf "${TRAVIS_ROOT}/var/lib/apt/lists/"*
+
+install:
+  - travis_retry make
+
+script:
+  - travis_retry make test
