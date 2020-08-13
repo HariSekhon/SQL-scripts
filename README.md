@@ -8,6 +8,8 @@ SQL Scripts
 [![Google BigQuery](https://img.shields.io/badge/SQL-Google%20BigQuery-4285F4?logo=google%20cloud)](https://cloud.google.com/bigquery)
 
 [![Travis CI](https://img.shields.io/travis/harisekhon/sql-scripts/master?logo=travis&label=Travis%20CI)](https://travis-ci.org/HariSekhon/SQL-scripts)
+[![GitHub stars](https://img.shields.io/github/stars/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/network)
 [![Lines of Code](https://img.shields.io/badge/lines%20of%20code-3.8k-lightgrey?logo=codecademy)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/commits/master)
 
