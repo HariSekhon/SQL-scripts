@@ -27,6 +27,12 @@ fi
 
 export PATH="$PATH:$srcdir/bash-tools"
 
+if [ -d "bash-tools" ]; then
+    pushd bash-tools
+    make update2
+    popd
+fi
+
 mysql_test_scripts.sh
 
 postgres_test_scripts.sh
