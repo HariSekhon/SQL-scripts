@@ -22,6 +22,16 @@
 --
 -- sys doesn't exist in MySQL <= 5.6 or MariaDB 10.5
 
+-- requires Performance Schema to be enabled
+--
+-- in my.cnf:
+--
+-- [mysqld]
+-- performance_schema=ON
+--
+-- 1 = true, 0 = false
+SELECT IF (@@performance_schema, 'TRUE', 'FALSE') AS 'Performance Schema enabled';
+
 SELECT
   *
 FROM
