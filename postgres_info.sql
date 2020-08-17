@@ -21,9 +21,13 @@
 
 -- https://www.postgresql.org/docs/12/functions.html
 
+\timing off
+
 -- ========================================================================== --
 --                                 V e r s i o n
 -- ========================================================================== --
+
+--\pset title 'PostgreSQL Version'
 
 -- version() returns a long human readable string, hence we split from others SELECTs eg.
 -- PostgreSQL 12.3 (Debian 12.3-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
@@ -35,6 +39,9 @@ SELECT
 -- ========================================================================== --
 --                          S e r v e r   D e t a i l s
 -- ========================================================================== --
+
+\echo
+--\pset title 'PostgreSQL Server Details'
 
 SELECT
   pg_postmaster_start_time(),
@@ -76,10 +83,16 @@ SELECT
 -- SHOW ALL;
 -- SHOW one_param;
 
+\echo
+--\pset title 'Config Files'
+
 SELECT
   current_setting('config_file') AS "config_file",
   current_setting('hba_file') AS "hba_file",
   current_setting('ident_file') AS "ident_file";
+
+\echo
+--\pset title 'PostgreSQL Data Directory & Unix Sockets'
 
 SELECT
   current_setting('data_directory') AS "data_directory",
@@ -90,6 +103,9 @@ SELECT
 -- ========================================================================== --
 --                   B u f f e r s   &   C o n n e c t i o n s
 -- ========================================================================== --
+
+\echo
+--\pset title 'Buffers & Connections'
 
 SELECT
   current_setting('shared_buffers') AS "shared_buffers",
@@ -105,6 +121,9 @@ SELECT
 --                                    U s e r
 -- ========================================================================== --
 
+\echo
+--\pset title 'Users, Sessions & Queries'
+
 -- in SQL the following have special syntax and should be called without parens: current_catalog, current_role, current_schema, current_user, session_user
 SELECT
   current_user,  -- aka user, current_role - this is the effective user for permission checking
@@ -114,12 +133,18 @@ SELECT
   pg_backend_pid(),
   current_query();
 
+\echo
+--\pset title 'Schema search list'
+
 SELECT current_schemas(true) AS "current_schemas(true) - auto-searched schemas"; -- true to include implicit schemas eg. pg_catalog
 
 
 -- ========================================================================== --
 --                       B a c k u p   &   R e c o v e r y
 -- ========================================================================== --
+
+\echo
+--\pset title 'Backup & Recovery'
 
 SELECT
   pg_is_in_backup(),
@@ -144,6 +169,9 @@ SELECT
 --                                 N e t w o r k
 -- ========================================================================== --
 
+\echo
+--\pset title 'Networking'
+
 SELECT
   inet_client_addr(),
   inet_client_addr(),
@@ -160,6 +188,9 @@ SELECT
 
 -- CURRENT_TIME and CURRENT_TIMESTAMP deliver values with time zone; LOCALTIME and LOCALTIMESTAMP deliver values without time zone.
 -- CURRENT_TIME, CURRENT_TIMESTAMP, LOCALTIME, and LOCALTIMESTAMP can optionally take a precision parameter, which causes the result to be rounded to that many fractional digits in the seconds field
+
+\echo
+--\pset title 'Date & Time'
 
 SELECT
   -- current timestamps even inside transactions/functions
@@ -180,3 +211,5 @@ SELECT
   statement_timestamp(),
   transaction_timestamp()  -- same as CURRENT_TIMESTAMP
 ;
+
+--\pset title
