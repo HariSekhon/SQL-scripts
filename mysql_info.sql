@@ -16,10 +16,12 @@
 -- Useful MySQL funcs & info
 --
 -- Useful for debugging intended vs actual user auth to fix mysql.user table
-
+--
 -- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.0 - 10.5
 
+
 -- https://dev.mysql.com/doc/refman/8.0/en/sql-function-reference.html
+
 
 -- some of these allow not using the brackets but use them for portability between MySQL 5.x and 8.x
 SELECT
