@@ -68,8 +68,8 @@ since the `$PWD` is set to `/sql` for convenience.
 #### See Also:
 
 - [.psqlrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.psqlrc) - advanced PostgreSQL psql client config
-- [psql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/psql.sh) - quickly connect to PostgreSQL with command line options auto-inferred from environment variables
-- [mysql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql.sh) - quickly connect to MySQL / MariaDB with command line options auto-inferred from environment variables
+- [psql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/psql.sh) - quickly connect to PostgreSQL with command line switches inferred from environment variables
+- [mysql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql.sh) - quickly connect to MySQL / MariaDB with command line switches inferred from environment variables
 - [postgres.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres.sh) - one-touch PostgreSQL, boots docker container and drops you in to `psql` shell. Version can be given as an argument
 - [mysqld.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysqld.sh) / [mariadb.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mariadb.sh) - one-touch MySQL / MariaDB, boots docker container and drops you in to `mysql` shell. Version can be given as an argument
 - [sqlcase.pl](https://github.com/HariSekhon/DevOps-Perl-tools/blob/master/sqlcase.pl) - autocases your SQL code
