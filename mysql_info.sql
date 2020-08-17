@@ -21,20 +21,20 @@
 
 -- https://dev.mysql.com/doc/refman/8.0/en/sql-function-reference.html
 
--- many of these allow not using the brackets but use them for portability between MySQL 5.x and 8.x
+-- some of these allow not using the brackets but use them for portability between MySQL 5.x and 8.x
 SELECT
   VERSION(),
-  USER(),   -- client's reported user + host, same as SESSION_USER(), SYSTEM_USER()
+  USER(),         -- client's reported user + host, same as SESSION_USER(), SYSTEM_USER()
   CURRENT_USER(), -- authenticated user name + host name - this is the one you want for debugging your mysql.user table configuration
-  DATABASE(),  -- SCHEMA()
+  DATABASE(),     -- SCHEMA()
   NOW(),
   CURDATE(),
   CURTIME(),
   UTC_DATE(),
   UTC_TIME(),
   UTC_TIMESTAMP(),
-  SYSDATE(),  -- returns date of function completion
+  SYSDATE(),      -- returns date of function completion
   -- PS_CURRENT_THREAD_ID(),  -- MySQL 8.0.16+
-  UUID_SHORT(), -- integer
-  UUID()        -- alnum
+  UUID_SHORT(),   -- integer
+  UUID()          -- alnum
 ;
