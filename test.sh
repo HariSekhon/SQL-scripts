@@ -31,10 +31,16 @@ if [ -d "bash-tools" ]; then
     pushd bash-tools
     make update2
     popd
+    echo
 fi
 
+echo
 mysql_test_scripts.sh
-
+echo
+echo "# ============================================================================ #"
+echo
 postgres_test_scripts.sh
-
+echo
+echo "# ============================================================================ #"
+echo
 mariadb_test_scripts.sh
