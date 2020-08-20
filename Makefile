@@ -57,6 +57,22 @@ all: build test
 test:
 	@./test.sh
 
+.PHONY: postgres
+postgres:
+	@./test.sh postgres
+
+.PHONY: mysql
+mysql:
+	@./test.sh mysql
+
+.PHONY: mariadb
+mariadb:
+	@./test.sh maria
+
+.PHONY: maria
+maria: mariadb
+	@:
+
 .PHONY: push
 push:
 	git push --all
