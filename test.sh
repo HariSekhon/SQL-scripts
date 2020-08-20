@@ -34,13 +34,22 @@ if [ -d "bash-tools" ]; then
     echo
 fi
 
+hr(){
+    echo
+    echo "# ============================================================================ #"
+    echo
+}
+
 echo
-mysql_test_scripts.sh
-echo
-echo "# ============================================================================ #"
-echo
-postgres_test_scripts.sh
-echo
-echo "# ============================================================================ #"
-echo
-mariadb_test_scripts.sh
+if [ $# -lt 1 ] || [[ "$*" =~ mysql ]]; then
+    mysql_test_scripts.sh
+    hr
+fi
+if [ $# -lt 1 ] || [[ "$*" =~ postgres ]]; then
+    postgres_test_scripts.sh
+    hr
+fi
+if [ $# -lt 1 ] || [[ "$*" =~ maria ]]; then
+    mariadb_test_scripts.sh
+    hr
+fi
