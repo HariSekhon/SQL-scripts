@@ -22,11 +22,13 @@ cd "$srcdir"
 if ! type -P mysql_test_scripts.sh &>/dev/null ||
    ! type -P mariadb_test_scripts.sh &>/dev/null ||
    ! type -P postgres_test_scripts.sh &>/dev/null; then
+    # downloads and builds DevOps-Bash-tools repo in $PWD/bash-tools - this is where the postgres/mysql/mariadb boot + test scripts are
     curl https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/setup/bootstrap.sh | sh
 fi
 
 export PATH="$PATH:$srcdir/bash-tools"
 
+# if this exists it means we bootstrapped above because the tools weren't in the $PATH
 if [ -d "bash-tools" ]; then
     pushd bash-tools
     make update2
