@@ -41,15 +41,15 @@ hr(){
 }
 
 echo
-if [ $# -lt 1 ] || [[ "$*" =~ mysql ]]; then
+if [ $# -eq 0 ] || [[ "$*" =~ mysql ]]; then
     mysql_test_scripts.sh
     hr
 fi
-if [ $# -lt 1 ] || [[ "$*" =~ postgres ]]; then
+if [ $# -eq 0 ] || [[ "$*" =~ postgres ]]; then
     postgres_test_scripts.sh
     hr
 fi
-if [ $# -lt 1 ] || [[ "$*" =~ maria ]]; then
+if [ $# -eq 0 ] || [[ "$*" =~ maria ]]; then
     mariadb_test_scripts.sh
     hr
 fi
