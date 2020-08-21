@@ -7,13 +7,14 @@ SQL Scripts
 [![AWS Athena](https://img.shields.io/badge/SQL-AWS%20Athena-232F3E?logo=amazon%20aws)](https://aws.amazon.com/athena/)
 [![Google BigQuery](https://img.shields.io/badge/SQL-Google%20BigQuery-4285F4?logo=google%20cloud)](https://cloud.google.com/bigquery)
 
-[![Travis CI](https://img.shields.io/travis/harisekhon/sql-scripts/master?logo=travis&label=Travis%20CI)](https://travis-ci.org/HariSekhon/SQL-scripts)
+[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-3.8k-lightgrey?logo=codecademy)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![GitHub stars](https://img.shields.io/github/stars/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/network)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/commits/master)
-[![Lines of Code](https://img.shields.io/badge/lines%20of%20code-3.8k-lightgrey?logo=codecademy)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 
+[![Travis CI](https://img.shields.io/travis/harisekhon/sql-scripts/master?logo=travis&label=Travis%20CI)](https://travis-ci.org/HariSekhon/SQL-scripts)
 [![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/commits/master)
+
 [![Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Mac](https://img.shields.io/badge/OS-Mac-blue?logo=apple)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-blue?logo=github)](https://github.com/HariSekhon/SQL-scripts)
