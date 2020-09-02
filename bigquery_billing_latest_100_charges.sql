@@ -31,7 +31,7 @@ SELECT
 FROM
   `myproject.mydataset.imported_billing_data`
 WHERE
-  Cost > 0
+  cost > 0
 ORDER BY
   end_time DESC
 LIMIT 100
