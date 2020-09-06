@@ -32,6 +32,8 @@ Cloud & Big Data Contractor, United Kingdom
 
 ### Inventory
 
+#### DevOps:
+
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
 - `mysql_*.sql` - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/) queries for DBA investigating + performance tuning
@@ -40,6 +42,13 @@ Cloud & Big Data Contractor, United Kingdom
 - `postgres_*.sql` - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
   - tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
   - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
+
+#### Analytics
+
+- `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
+- `analytics/bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) ecommerce and machine learning classification logistic regression models and purchasing predictions
+
+#### DevOps SQL tooling:
 
 You can quickly test the PostgreSQL / MySQL scripts using `postgres.sh` / `mysqld.sh` / `mariadb.sh` in the [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools) repo, which boots a docker container and drops in to `mysql` / `psql` shell with this directory mounted at `/sql` and used as `$PWD` for fast easy sourcing eg.
 
