@@ -19,6 +19,8 @@
 --
 -- - click "Go to model" on the far right of the line
 
+-- this model is weak in feature selection - see model2 for a much better more realistic model
+
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
 OPTIONS
 (
