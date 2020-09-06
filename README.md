@@ -46,7 +46,7 @@ Cloud & Big Data Contractor, United Kingdom
 #### Analytics
 
 - `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
-- `analytics/bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) ecommerce and machine learning classification logistic regression models and purchasing predictions
+- `analytics/bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
 
 #### DevOps SQL tooling:
 
