@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- ran for 2 minutes to build the trained modeli
+-- ran for 2 minutes to build the trained model
 --
 -- This statement created a new model named <project>:ecommerce.classification_model.
 --
