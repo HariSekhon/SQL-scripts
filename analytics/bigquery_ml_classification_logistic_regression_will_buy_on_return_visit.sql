@@ -13,6 +13,12 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
+-- ran for 2 minutes to build the trained modeli
+--
+-- This statement created a new model named <project>:ecommerce.classification_model.
+--
+-- - click "Go to model" on the far right of the line
+
 CREATE OR REPLACE MODEL `ecommerce.classification_model`
 OPTIONS
 (
@@ -35,7 +41,7 @@ FROM
     `data-to-insights.ecommerce.web_analytics`
   WHERE
     totals.newVisits = 1
-    AND date BETWEEN '20160801' AND '20170430') # train on first 9 months
+    AND date BETWEEN '20160801' AND '20170430') # train on first 9 months only so we can test on the rest of the data
   JOIN
   (SELECT
     fullvisitorid,
