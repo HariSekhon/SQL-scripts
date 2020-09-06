@@ -40,7 +40,8 @@ Cloud & Big Data Contractor, United Kingdom
 - `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
 - `mysql_*.sql`:
   - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/) queries for DBA investigating + performance tuning
-  - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects (intended `USER()` vs actual `CURRENT_USER()`)
+  - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects
+    - (shows intended `USER()` vs actual `CURRENT_USER()`)
   - tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.x
 - `postgres_*.sql`:
   - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
