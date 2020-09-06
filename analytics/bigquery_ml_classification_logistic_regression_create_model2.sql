@@ -13,6 +13,8 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
+-- ran in 2 mins
+
 CREATE OR REPLACE MODEL `ecommerce.classification_model_2`
 OPTIONS
   (model_type='logistic_reg', labels = ['will_buy_on_return_visit']) AS
