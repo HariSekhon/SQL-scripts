@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- looking at bounces and time on site are not good predictors, of the top 10 customers by time on site only 1 purchased!
+-- looking at bounces and time on site are not good features for model training and prediction since of the top 10 customers by time on site only 1 purchased!
 
 SELECT
   * EXCEPT(fullVisitorId)
