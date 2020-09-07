@@ -22,12 +22,10 @@
 -- this model is weak in feature selection - see model2 for a much better more realistic model
 
 CREATE OR REPLACE MODEL `ecommerce.classification_model1`
-OPTIONS
-(
-model_type='logistic_reg',
-labels = ['will_buy_on_return_visit']
-)
-AS
+OPTIONS (
+  model_type='logistic_reg',
+  labels = ['will_buy_on_return_visit']
+) AS
 
 -- training data provided below via SELECT statement
 
