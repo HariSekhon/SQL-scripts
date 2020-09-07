@@ -23,7 +23,10 @@ SELECT
     WHEN roc_auc > .9 THEN 'good'
     WHEN roc_auc > .8 THEN 'fair'
     WHEN roc_auc > .7 THEN 'not great'
-  ELSE 'poor' END AS model_quality
+  ELSE 'poor' END AS model_quality,
+  accuracy,
+  precision,
+  recall
 FROM
   ML.EVALUATE(MODEL ecommerce.classification_model,  (
 
