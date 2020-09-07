@@ -13,7 +13,11 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- evaluate the better model 2 with more features - gives much better predictive power with a better ROC area under curve score
+-- evaluate model2 with more features
+--
+-- get the score for the ROC area under curve to check the quality of prediction
+--
+-- good ROC auc > 0.9 - gives much better predictive power than model1
 
 SELECT
   roc_auc,
