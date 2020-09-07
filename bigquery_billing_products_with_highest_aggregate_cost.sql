@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- BigQuery Billing Query - products with highest aggregate cost
+-- BigQuery Billing Query
+--
+-- products with highest aggregate cost
 
 SELECT
   product,

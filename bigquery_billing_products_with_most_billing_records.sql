@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- BigQuery Billing Query - products with most billing records
+-- BigQuery Billing Query
+--
+-- products with most billing records
 
 SELECT
   product,

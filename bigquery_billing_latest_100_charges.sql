@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- BigQuery Billing Query - latest 100 charges
+-- BigQuery Billing Query
+--
+-- latest 100 charges
 
 SELECT
   product,
