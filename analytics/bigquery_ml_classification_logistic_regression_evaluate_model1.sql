@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- evaluate the model and get a result for the ROC curve to check the quality of prediction
+-- evaluate model1
+--
+-- get the score for the ROC area under curve to check the quality of prediction
 --
 -- poor ROC auc only ~ 0.7x score  - go to model 2
 
