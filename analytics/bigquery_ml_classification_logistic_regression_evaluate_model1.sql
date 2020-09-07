@@ -15,7 +15,7 @@
 
 -- evaluate the model and get a result for the ROC curve to check the quality of prediction
 
--- poor ROC auc - go to model 2
+-- poor ROC auc only ~ 0.7x score  - go to model 2
 
 SELECT
   roc_auc,
