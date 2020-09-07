@@ -25,4 +25,4 @@ WHERE
 GROUP BY
   product
 ORDER BY
-  billing_records DESC
+  billing_records DESC;

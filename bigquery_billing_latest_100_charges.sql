@@ -34,4 +34,4 @@ WHERE
   cost > 0
 ORDER BY
   end_time DESC
-LIMIT 100
+LIMIT 100;

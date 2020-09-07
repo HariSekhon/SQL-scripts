@@ -23,4 +23,4 @@ FROM
 GROUP BY
   product
 ORDER BY
-  total_cost DESC
+  total_cost DESC;

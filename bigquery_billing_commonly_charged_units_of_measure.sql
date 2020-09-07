@@ -25,4 +25,4 @@ WHERE
 GROUP BY
   usage_unit
 ORDER BY
-  billing_records DESC
+  billing_records DESC;
