@@ -19,7 +19,7 @@
 
 SELECT
   product,
-  ROUND(SUM(cost),2) AS total_cost
+  ROUND(SUM(cost), 2) AS total_cost
 FROM
   `myproject.mydataset.imported_billing_data`
 GROUP BY
