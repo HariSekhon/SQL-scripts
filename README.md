@@ -90,8 +90,8 @@ since the `$PWD` is set to `/sql` for convenience.
 - [sqlcase.pl](https://github.com/HariSekhon/DevOps-Perl-tools/blob/master/sqlcase.pl) - autocases your SQL code
   - I use this a lot and call it via hotkey configured in my [.vimrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.vimrc)
   - there are `*case.pl` specializations for most of the major RDBMS and distributed SQL systems, even several NoSQL systems, using each one's language specific keywords
-  - [postgres_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres_foreach_table.sh) / [mysql_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql_foreach_table.sh) - execute templated SQL queries/statements against all or a subset of tables
-  - [postgres_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres_tables_row_counts.sh) / [mysql_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql_tables_row_counts.sh) - get row counts for all or a subset of tables
+- [postgres_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres_foreach_table.sh) / [mysql_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql_foreach_table.sh) - execute templated SQL queries/statements against all or a subset of tables
+- [postgres_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres_tables_row_counts.sh) / [mysql_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql_tables_row_counts.sh) - get row counts for all or a subset of tables
 - Hive & Impala SQL:
   - [beeline.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/beeline.sh) - quickly connect to Hive, auto-determine HiveServer2 address, Kerberos & SSL options, ZooKeeper quorum
   - [impala_shell.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/impala_shell.sh) - quickly connect to Impala, auto-determine a random Hadoop node address (or use a Load Balancer) and Kerberos options
