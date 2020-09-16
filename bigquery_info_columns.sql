@@ -14,6 +14,9 @@
 --
 
 -- BigQuery Information Schema - columns in a dataset
+--
+-- Processes 10MB of data when run
+
 
 SELECT
   table_catalog,
