@@ -39,7 +39,7 @@ Cloud & Big Data Contractor, United Kingdom
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
   - `bigquery_billing_*.sql` - billing queries for [GCP](https://cloud.google.com/) usage eg. highest cost services, most used GCP products, recent charges etc.
-  - `bigquery_info_*.sql` - information schema queries for tables, columns, partitioning, clustering etc.
+  - `bigquery_info_*.sql` - information schema queries for datasets, tables, columns, partitioning, clustering etc.
 - `mysql_*.sql`:
   - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/) queries for DBA investigating + performance tuning
   - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects
@@ -54,7 +54,7 @@ Cloud & Big Data Contractor, United Kingdom
 
 - `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
   - `bigquery_billing_*.sql` - billing queries for [GCP](https://cloud.google.com/) usage eg. highest cost services, most used GCP products, recent charges etc.
-  - `bigquery_info_*.sql` - information schema queries for tables, columns, partitioning, clustering etc.
+  - `bigquery_info_*.sql` - information schema queries for datasets, tables, columns, partitioning, clustering etc.
   - [analytics/](https://github.com/HariSekhon/SQL-scripts/tree/master/analytics)`bigquery_*.sql` - ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
   - for more [BigQuery](https://cloud.google.com/bigquery) examples, see [Data Engineering demos](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos)
 
