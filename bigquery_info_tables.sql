@@ -19,6 +19,8 @@
 --
 -- Processes zero bytes for billing purposes since this is just using the Information Schema
 
+-- https://cloud.google.com/bigquery/docs/information-schema-tables
+--
 -- https://cloud.google.com/bigquery/docs/tables#getting_information_about_tables
 
 --
