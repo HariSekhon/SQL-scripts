@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- BigQuery Information Schema - tables in a dataset
+-- BigQuery Information Schema
+--
+-- Lists tables and their details in a given dataset
 --
 -- Processes zero bytes for billing purposes since this is just using the Information Schema
 
