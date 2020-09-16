@@ -37,7 +37,9 @@ Cloud & Big Data Contractor, United Kingdom
 #### DevOps / DBA:
 
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
-- `bigquery_billing_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) billing queries for [GCP](https://cloud.google.com/) services eg. highest cost services, most used GCP products, recent charges etc.
+- `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
+  - `bigquery_billing_*.sql` - billing queries for [GCP](https://cloud.google.com/) usage eg. highest cost services, most used GCP products, recent charges etc.
+  - `bigquery_info_*.sql` - information schema queries for tables, columns, partitioning, clustering etc
 - `mysql_*.sql`:
   - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/) queries for DBA investigating + performance tuning
   - `mysql_info.sql` - summary overview, useful to debug your `mysql.user` table auth effects
