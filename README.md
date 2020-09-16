@@ -56,6 +56,7 @@ Cloud & Big Data Contractor, United Kingdom
   - `bigquery_billing_*.sql` - billing queries for [GCP](https://cloud.google.com/) usage eg. highest cost services, most used GCP products, recent charges etc.
   - `bigquery_info_*.sql` - information schema queries for tables, columns, partitioning, clustering etc.
   - [analytics/](https://github.com/HariSekhon/SQL-scripts/tree/master/analytics)`bigquery_*.sql` - ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
+  - for more [BigQuery](https://cloud.google.com/bigquery) examples, see [Data Engineering demos](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos)
 
 #### DevOps SQL tooling:
 
