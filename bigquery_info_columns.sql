@@ -19,6 +19,7 @@
 --
 -- Processes 10MB of data when run
 
+-- https://cloud.google.com/bigquery/docs/tables#columns_view
 
 SELECT
   table_catalog,
