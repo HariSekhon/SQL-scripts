@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- BigQuery Information Schema - columns in a dataset
+-- BigQuery Information Schema
+--
+-- Lists columns and their details in a given dataset
 --
 -- Processes 10MB of data when run
 
