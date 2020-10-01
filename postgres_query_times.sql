@@ -17,6 +17,9 @@
 --
 -- Requires PostgreSQL 13+
 --
+-- For PostgreSQL 9.5 - 12.x  use postgres_query_times_pre13.sql
+-- For PostgreSQL <= 9.4      use postgres_query_times_pre95.sql
+--
 -- Tested on PostgreSQL 13.0
 
 -- postgresql.conf needs before start:
