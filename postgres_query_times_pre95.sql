@@ -15,7 +15,7 @@
 
 -- PostgreSQL query times from pg_stat_statements for PostgreSQL <= 9.4
 --
--- Requires PostgreSQL 9.1+
+-- Requires 9.1 <= PostgreSQL <= 12
 --
 -- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x
 
