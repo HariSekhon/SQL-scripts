@@ -15,7 +15,11 @@
 
 -- PostgreSQL query times from pg_stat_statements for PostgreSQL <= 9.4
 --
--- Requires PostgreSQL 9.1+
+-- Also works on later versions up to PostgreSQL 12, but primarily written to be able to be able to query earlier PostgreSQL versions
+--
+-- For PostgreSQL >= 9.5 recommend postgres_query_times_pre13.sql instead which returns more available information
+--
+-- Requires 9.1 <= PostgreSQL <= 12
 --
 -- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x
 

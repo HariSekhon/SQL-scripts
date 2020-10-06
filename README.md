@@ -48,7 +48,7 @@ Cloud & Big Data Contractor, United Kingdom
 - `postgres_*.sql`:
   - [PostgreSQL](https://www.postgresql.org/) queries for DBA investigating + performance tuning
   - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
-  - tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
+  - tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.x
 
 #### Analytics
 
