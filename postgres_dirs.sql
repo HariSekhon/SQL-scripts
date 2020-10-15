@@ -17,7 +17,7 @@
 --
 -- Requires PostgreSQL >= 11.9
 --
--- Tested on PostgreSQL 11.9, 12.x
+-- Tested on PostgreSQL 11.9, 12.x, 13.0
 
 SELECT
   current_setting('config_file') AS "config_file",

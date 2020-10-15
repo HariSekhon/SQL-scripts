@@ -17,7 +17,7 @@
 --
 -- Requires PostgreSQL 9.5+
 --
--- Tested on PostgreSQL 9.5, 9.6, 10.x, 11.x, 12.x
+-- Tested on PostgreSQL 9.5, 9.6, 10.x, 11.x, 12.x, 13.0
 
 --\pset title 'pg_settings'
 \echo pg_settings:

@@ -19,7 +19,7 @@
 --
 -- Requires PostgreSQL 9.5+
 --
--- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x
+-- Tested on PostgreSQL 9.5, 9.6, 10.x 11.x, 12.x, 13.0
 
 -- https://www.postgresql.org/docs/12/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-MEMORY
 

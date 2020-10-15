@@ -17,7 +17,7 @@
 --
 -- Requires PostgreSQL >= 9.6
 --
--- Tested on PostgreSQL 9.6+, 10.x 11.x, 12.x
+-- Tested on PostgreSQL 9.6+, 10.x 11.x, 12.x, 13.0
 
 SELECT
   pid,

@@ -15,7 +15,7 @@
 
 -- PostgreSQL databases by size descending (only ones you can access)
 --
--- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
+-- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
   d.datname AS Name,

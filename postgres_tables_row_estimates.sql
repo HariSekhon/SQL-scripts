@@ -18,7 +18,7 @@
 -- Useful when comparing tables or when a table becomes so large you don't want the expense
 -- of 'SELECT COUNT(*)' and are happy to use the internal statistics instead
 --
--- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x
+-- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
   schemaname,

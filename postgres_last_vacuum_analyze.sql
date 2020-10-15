@@ -17,7 +17,7 @@
 --
 -- Requires PostgreSQL 9.4+ (see postgres_last_vacuum_analyze_pre94.sql for earlier versions)
 --
--- Tested on PostgreSQL 9.4+, 10.x, 11.x, 12.x
+-- Tested on PostgreSQL 9.4+, 10.x, 11.x, 12.x, 13.0
 
 SELECT
   schemaname,

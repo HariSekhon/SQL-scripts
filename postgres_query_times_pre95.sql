@@ -21,7 +21,7 @@
 --
 -- Requires 9.1 <= PostgreSQL <= 12
 --
--- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x
+-- Tested on PostgreSQL 9.1+, 10.x, 11.x, 12.x, 13.0
 
 -- postgresql.conf needs before start:
 -- shared_preload_libraries = 'pg_stat_statements'

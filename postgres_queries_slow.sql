@@ -19,7 +19,7 @@
 --
 -- Requires PostgreSQL 9.6+ (see postgres_queries_slow_pre96.sql and postgres_queries_slow_pre92.sql)
 --
--- Tested on PostgreSQL 9.6+, 10x, 11.x, 12.x
+-- Tested on PostgreSQL 9.6+, 10x, 11.x, 12.x, 13.0
 
 SELECT
   now() - query_start as "runtime",
