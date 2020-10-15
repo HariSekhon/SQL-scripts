@@ -34,6 +34,7 @@ SELECT
 FROM
   pg_stat_activity
 WHERE
+  -- can't use 'runtime' here
   now() - query_start > '30 seconds'::interval
 ORDER BY
   runtime DESC;
