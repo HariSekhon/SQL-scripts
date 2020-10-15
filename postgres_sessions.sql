@@ -15,7 +15,7 @@
 
 -- PostgreSQL count of sessions in each state
 --
--- Requires PostgreSQL 9.2+
+-- Requires PostgreSQL 10+
 --
 -- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x
 
@@ -28,8 +28,10 @@ SELECT
   backend_start,
   query_start,
   state,
+  -- not available on PostgreSQL < 10
   backend_type
 FROM
   pg_stat_activity
 ORDER BY
+  -- not available on PostgreSQL < 10
   backend_type;
