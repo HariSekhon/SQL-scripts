@@ -13,12 +13,26 @@
 --  https://www.linkedin.com/in/harisekhon
 --
 
--- Show PostgreSQL settings from postgres.conf file
+-- Show PostgreSQL running settings and those set in postgres.conf
 --
 -- Requires PostgreSQL 9.5+
 --
 -- Tested on PostgreSQL 9.5, 9.6, 10.x, 11.x, 12.x
 
+--\pset title 'pg_settings'
+\echo pg_settings:
+SELECT
+  name,
+  setting,
+  unit,
+  context
+FROM
+  pg_settings;
+
+\echo
+
+--\pset title 'pg_file_settings'
+\echo pg_file_settings:
 SELECT
   *
 FROM
