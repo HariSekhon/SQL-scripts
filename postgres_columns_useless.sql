@@ -13,9 +13,11 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Finds useless columns in PostgreSQL
+-- Finds useless PostgreSQL columns containing only a single value
 --
--- Useless columns are those with only a single value, eg. all NULLs or a redundant non-distinguishing field
+-- eg. all NULLs or a redundant non-distinguishing field
+--
+-- Only returns columns with over 100 rows
 --
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
