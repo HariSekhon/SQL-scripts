@@ -59,7 +59,8 @@ cache:
     - $HOME/.cpan
     - $HOME/.cpanm
     - $HOME/.gem
-    - bash-tools/pytools_checks
+    # bash-tools is not a submodule, but downloaded via Make so ok ot cache whole
+    - bash-tools
 
 # ==============================================
 # https://docs.travis-ci.com/user/job-lifecycle/
