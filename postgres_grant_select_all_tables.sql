@@ -18,6 +18,12 @@
 -- XXX: replace 'fivetran' with the postgres user account used by the 3rd party ETL tool
 --
 -- https://fivetran.com/docs/databases/postgresql/gcs-setup-guide?embed=true#grantreadonlyaccess
+--
+-- Requires PostgreSQL 9.0+
+--
+-- Tested on PostgreSQL 9.x, 10.x, 11.x, 12.x, 13.0
+
+CREATE USER fivetran;
 
 GRANT USAGE ON SCHEMA "public" TO fivetran;
 GRANT SELECT ON ALL TABLES IN SCHEMA "public" TO fivetran;
