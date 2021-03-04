@@ -21,7 +21,7 @@
 
 SELECT
   relname AS table,
-  idx_scan / GREATEST(seq_scan + idx_scan, 1) * 100 AS percent_of_times_index_used,
+  100 * idx_scan / GREATEST(seq_scan + idx_scan, 1) AS percent_of_times_index_used,
   n_live_tup AS rows_in_table
 FROM
   pg_stat_user_tables
