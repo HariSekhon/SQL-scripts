@@ -69,23 +69,17 @@ postgres:
 ```
 \i /sql/postgres_query_times.sql
 ```
+```
+\i postgres_query_times.sql
+```
 
 mysql:
 ```
 source /sql/mysql_sessions.sql
 ```
-
-or just
-
-```
-\i postgres_query_times.sql
-```
-
 ```
 \. mysql_sessions.sql
 ```
-
-since the `$PWD` is set to `/sql` for convenience.
 
 
 #### Related scripts:
