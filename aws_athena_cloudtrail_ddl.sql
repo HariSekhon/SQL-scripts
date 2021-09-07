@@ -17,51 +17,53 @@
 -- replace <MY_BUCKET> and <MY_ACCOUNT_NUMBER> on last line
 
 CREATE EXTERNAL TABLE cloudtrail_logs (
-    eventversion STRING,
-    useridentity STRUCT<
-                   type:STRING,
-                   principalid:STRING,
-                   arn:STRING,
-                   accountid:STRING,
-                   invokedby:STRING,
-                   accesskeyid:STRING,
-                   userName:STRING,
-    sessioncontext:STRUCT<
-    attributes:STRUCT<
-                   mfaauthenticated:STRING,
-                   creationdate:STRING>,
-    sessionissuer:STRUCT<
-                   type:STRING,
-                   principalId:STRING,
-                   arn:STRING,
-                   accountId:STRING,
-                   userName:STRING>>>,
-    eventtime STRING,
-    eventsource STRING,
-    eventname STRING,
-    awsregion STRING,
-    sourceipaddress STRING,
-    useragent STRING,
-    errorcode STRING,
-    errormessage STRING,
-    requestparameters STRING,
-    responseelements STRING,
-    additionaleventdata STRING,
-    requestid STRING,
-    eventid STRING,
+    eventVersion STRING,
+    userIdentity STRUCT<
+        type: STRING,
+        principalId: STRING,
+        arn: STRING,
+        accountId: STRING,
+        invokedBy: STRING,
+        accessKeyId: STRING,
+        userName: STRING,
+        sessionContext: STRUCT<
+            attributes: STRUCT<
+                mfaAuthenticated: STRING,
+                creationDate: STRING>,
+            sessionIssuer: STRUCT<
+                type: STRING,
+                principalId: STRING,
+                arn: STRING,
+                accountId: STRING,
+                userName: STRING>>>,
+    eventTime STRING,
+    eventSource STRING,
+    eventName STRING,
+    awsRegion STRING,
+    sourceIpAddress STRING,
+    userAgent STRING,
+    errorCode STRING,
+    errorMessage STRING,
+    requestParameters STRING,
+    responseElements STRING,
+    additionalEventData STRING,
+    requestId STRING,
+    eventId STRING,
     resources ARRAY<STRUCT<
-                   ARN:STRING,
-                   accountId:STRING,
-                   type:STRING>>,
-    eventtype STRING,
-    apiversion STRING,
-    readonly STRING,
-    recipientaccountid STRING,
-    serviceeventdetails STRING,
-    sharedeventid STRING,
-    vpcendpointid STRING
+        arn: STRING,
+        accountId: STRING,
+        type: STRING>>,
+    eventType STRING,
+    apiVersion STRING,
+    readOnly STRING,
+    recipientAccountId STRING,
+    serviceEventDetails STRING,
+    sharedEventID STRING,
+    vpcEndpointId STRING
 )
+COMMENT 'CloudTrail table for <MY_BUCKET> bucket'
 ROW FORMAT SERDE 'com.amazon.emr.hive.serde.CloudTrailSerde'
 STORED AS INPUTFORMAT 'com.amazon.emr.cloudtrail.CloudTrailInputFormat'
 OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
-LOCATION 's3://<MY_BUCKET>/AWSLogs/<MY_ACCOUNT_NUMBER>/';
+LOCATION 's3://<MY_BUCKET>/AWSLogs/<MY_ACCOUNT_NUMBER>/'
+TBLPROPERTIES ('classification'='cloudtrail');
