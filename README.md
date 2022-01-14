@@ -37,7 +37,7 @@ Cloud & Big Data Contractor, United Kingdom
 
 ### Inventory
 
-#### DevOps / DBA:
+#### DevOps / DBA
 
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
@@ -61,7 +61,7 @@ Cloud & Big Data Contractor, United Kingdom
   - [analytics/](https://github.com/HariSekhon/SQL-scripts/tree/master/analytics)`bigquery_*.sql` - ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
   - for more [BigQuery](https://cloud.google.com/bigquery) examples, see [Data Engineering demos](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos)
 
-#### DevOps SQL tooling:
+#### DevOps SQL tooling
 
 You can quickly test the PostgreSQL / MySQL scripts using `postgres.sh` / `mysqld.sh` / `mariadb.sh` in the [DevOps Bash tools](https://github.com/harisekhon/devops-bash-tools) repo, which boots a docker container and drops straight in to a `mysql` / `psql` shell with this directory mounted at `/sql` and used as `$PWD` for fast easy sourcing eg.
 
@@ -82,7 +82,7 @@ source /sql/mysql_sessions.sql
 ```
 
 
-#### Related scripts:
+#### Related scripts
 
 - [.psqlrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.psqlrc) - advanced PostgreSQL psql client config
 - [psql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/psql.sh) - quickly connect to PostgreSQL with command line switches inferred from environment variables
@@ -102,7 +102,7 @@ source /sql/mysql_sessions.sql
   - [hive_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/hive_tables_column_counts.sh) / [impala_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/impala_tables_column_counts.sh) - get the column counts for big tables in Hive / Impala
   - [hive_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/hive_tables_metadata.sh) / [impala_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/impala_tables_metadata.sh) / [hive_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/hive_tables_locations.sh) / [impala_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/impala_tables_locations.sh) - get Hive / Impala metadata for all or a subset of tables, eg. Location to determine where the external tables data is being stored (HDFS / S3 paths)
 
-### See Also:
+### See Also
 
 * [DevOps Bash Tools](https://github.com/harisekhon/devops-bash-tools) - 550+ DevOps Bash Scripts, Advanced `.bashrc`, `.vimrc`, `.screenrc`, `.tmux.conf`, `.gitconfig`, CI configs & Utility Code Library - AWS, GCP, Kubernetes, Docker, Kafka, Hadoop, SQL, BigQuery, Hive, Impala, PostgreSQL, MySQL, LDAP, DockerHub, Jenkins, Spotify API & MP3 tools, Git tricks, GitHub API, GitLab API, BitBucket API, Code & build linting, package management for Linux / Mac / Python / Perl / Ruby / NodeJS / Golang, and lots more random goodies
 
