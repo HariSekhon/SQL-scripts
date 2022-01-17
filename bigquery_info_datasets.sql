@@ -30,7 +30,7 @@ FROM
   USING (schema_name)
 -- will miss all the datasets without descriptions like this
 --WHERE
---	so.option_name = 'description'
+--  so.option_name = 'description'
 ORDER BY
-	last_modified_time DESC
+  last_modified_time DESC
 LIMIT 15;
