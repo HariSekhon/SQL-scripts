@@ -54,4 +54,4 @@ FROM
   -- XXX: replace bigquery-public-data.github_repos with myproject.mydataset
   `bigquery-public-data.github_repos.__TABLES__`
 ORDER BY
-	size_gb DESC;
+  size_gb DESC;
