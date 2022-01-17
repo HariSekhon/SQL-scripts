@@ -20,7 +20,7 @@
 -- For a script that auto-generates this SQL for all datasets in the current project, see
 --
 --     bigquery_generate_query_biggest_tables_across_datasets_by_row_count.sh
--- 	   bigquery_generate_query_biggest_tables_across_datasets_by_size.sh
+--     bigquery_generate_query_biggest_tables_across_datasets_by_size.sh
 --
 -- in the DevOps Bash tools repo:
 --
