@@ -24,7 +24,7 @@
 --
 -- in the DevOps Bash tools repo:
 --
---     https://github.com/HariSekhon/devops-bash-tools
+--     https://github.com/HariSekhon/DevOps-Bash-tools
 
 -- Unfortunately we can't do this trick for the bigquery-public-data project because of this error:
 --
