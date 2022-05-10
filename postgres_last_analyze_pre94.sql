@@ -4,7 +4,7 @@
 --
 --  vim:ts=2:sts=2:sw=2:et:filetype=sql
 --
---  https://github.com/harisekhon/sql
+--  https://github.com/HariSekhon/SQL-scripts
 --
 --  License: see accompanying Hari Sekhon LICENSE file
 --

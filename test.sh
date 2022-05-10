@@ -4,7 +4,7 @@
 #  Author: Hari Sekhon
 #  Date: 2020-08-12 12:13:30 +0100 (Wed, 12 Aug 2020)
 #
-#  https://github.com/harisekhon/sql
+#  https://github.com/HariSekhon/SQL-scripts
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
