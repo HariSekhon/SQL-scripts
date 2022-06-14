@@ -18,6 +18,7 @@ SQL Scripts
 [![ShellCheck](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml)
 [![Validation](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml)
 [![Semgrep](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep.yaml)
+[![Semgrep Cloud](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep-cloud.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep-cloud.yaml)
 [![Kics](https://github.com/HariSekhon/SQL-scripts/actions/workflows/kics.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/kics.yaml)
 [![Travis CI](https://img.shields.io/badge/TravisCI-ready-blue?logo=travis&label=Travis%20CI)](https://github.com/HariSekhon/SQL-scripts/blob/master/.travis.yml)
 
