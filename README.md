@@ -16,6 +16,7 @@ SQL Scripts
 
 [![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
 [![ShellCheck](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml)
+[![YAML](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml)
 [![Validation](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml)
 [![Semgrep](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep.yaml)
 [![Semgrep Cloud](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep-cloud.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/semgrep-cloud.yaml)
