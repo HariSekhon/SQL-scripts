@@ -97,7 +97,7 @@ source /sql/mysql_sessions.sql
 - [postgres_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres/postgres_foreach_table.sh) / [mysql_foreach_table.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql/mysql_foreach_table.sh) - execute templated SQL queries/statements against all or a subset of tables
 - [postgres_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/postgres/postgres_tables_row_counts.sh) / [mysql_tables_row_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/mysql/mysql_tables_row_counts.sh) - get row counts for all or a subset of tables
 - [sqlcase.pl](https://github.com/HariSekhon/DevOps-Perl-tools/blob/master/sqlcase.pl) - autocases your SQL code
-  - I use this a lot and call it via hotkey configured in my [.vimrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.vimrc)
+  - I use this a lot and call it via hotkey configured in my [.vimrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/configs/.vimrc)
   - there are `*case.pl` specializations for most of the major RDBMS and distributed SQL systems, even several NoSQL systems, using each one's language specific keywords
 - Hive & Impala SQL:
   - [beeline.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/beeline.sh) - quickly connect to Hive, auto-determines HiveServer2 address, Kerberos & SSL options, ZooKeeper quorum
