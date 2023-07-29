@@ -4,6 +4,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/network)
 [![Lines of Code](https://img.shields.io/badge/lines%20of%20code-5k-lightgrey?logo=codecademy)](https://github.com/HariSekhon/SQL-scripts#SQL-Scripts)
 [![License](https://img.shields.io/github/license/HariSekhon/SQL-scripts)](https://github.com/HariSekhon/SQL-scripts/blob/master/LICENSE)
+[![My LinkedIn](https://img.shields.io/badge/LinkedIn%20Profile-HariSekhon-blue?logo=linkedin)](https://www.linkedin.com/in/HariSekhon/)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/HariSekhon/SQL-scripts?logo=github)](https://github.com/HariSekhon/SQL-scripts/commits/master)
 
 [![PostgreSQL](https://img.shields.io/badge/SQL-PostreSQL-336791?logo=postgresql)](https://www.postgresql.org/)
