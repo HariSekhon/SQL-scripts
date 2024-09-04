@@ -42,9 +42,9 @@ Cloud & Big Data Contractor, United Kingdom
 [![My LinkedIn](https://img.shields.io/badge/LinkedIn%20Profile-HariSekhon-blue?logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIGZpbGw9IiNmZmZmZmYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TGlua2VkSW48L3RpdGxlPjxwYXRoIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPgo=)](https://www.linkedin.com/in/HariSekhon/)
 <br>*(you're welcome to connect with me on LinkedIn)*
 
-### Inventory
+## Inventory
 
-#### DevOps / DBA
+### DevOps / DBA
 
 - `aws_athena_cloudtrail_ddl.sql` - [AWS Athena](https://aws.amazon.com/athena/) DDL to setup up integration to query [CloudTrail](https://aws.amazon.com/cloudtrail/) logs from Athena
 - `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
@@ -60,7 +60,7 @@ Cloud & Big Data Contractor, United Kingdom
   - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
   - tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.x
 
-#### Analytics
+### Analytics
 
 - `bigquery_*.sql` - [Google BigQuery](https://cloud.google.com/bigquery) scripts:
   - `bigquery_billing_*.sql` - billing queries for [GCP](https://cloud.google.com/) usage eg. highest cost services, most used GCP products, recent charges etc.
@@ -68,28 +68,31 @@ Cloud & Big Data Contractor, United Kingdom
   - [analytics/](https://github.com/HariSekhon/SQL-scripts/tree/master/analytics)`bigquery_*.sql` - ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
   - for more [BigQuery](https://cloud.google.com/bigquery) examples, see [Data Engineering demos](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos)
 
-#### DevOps SQL tooling
+### DevOps SQL tooling
 
 You can quickly test the PostgreSQL / MySQL scripts using `postgres.sh` / `mysqld.sh` / `mariadb.sh` in the [DevOps Bash tools](https://github.com/HariSekhon/DevOps-Bash-tools) repo, which boots a docker container and drops straight in to a `mysql` / `psql` shell with this directory mounted at `/sql` and used as `$PWD` for fast easy sourcing eg.
 
 postgres:
-```
+
+```postgres-sql
 \i /sql/postgres_query_times.sql
 ```
-```
+
+```postgres-sql
 \i postgres_query_times.sql
 ```
 
 mysql:
-```
+
+```mysql-sql
 source /sql/mysql_sessions.sql
 ```
-```
+
+```mysql-sql
 \. mysql_sessions.sql
 ```
 
-
-#### Related scripts
+### Related scripts
 
 - [.psqlrc](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.psqlrc) - advanced PostgreSQL psql client config
 - [psql.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/psql.sh) - quickly connect to PostgreSQL with command line switches inferred from environment variables
@@ -109,7 +112,7 @@ source /sql/mysql_sessions.sql
   - [hive_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_column_counts.sh) / [impala_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_column_counts.sh) - get the column counts for big tables in Hive / Impala
   - [hive_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_metadata.sh) / [impala_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_metadata.sh) / [hive_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_locations.sh) / [impala_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_locations.sh) - get Hive / Impala metadata for all or a subset of tables, eg. Location to determine where the external tables data is being stored (HDFS / S3 paths)
 
-### Stargazers over time
+## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/HariSekhon/SQL-scripts.svg)](https://starchart.cc/HariSekhon/SQL-scripts)
 
