@@ -22,10 +22,10 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  SUM(heap_blks_read) AS heap_blks_read,
-  SUM(heap_blks_hit)  AS heap_blks_hit,
-           SUM(heap_blks_hit) /
-  GREATEST(SUM(heap_blks_hit) + SUM(heap_blks_read), 1)::float
-                AS ratio
+    SUM(heap_blks_read) AS heap_blks_read,
+    SUM(heap_blks_hit)  AS heap_blks_hit,
+             SUM(heap_blks_hit) /
+    GREATEST(SUM(heap_blks_hit) + SUM(heap_blks_read), 1)::float
+                  AS ratio
 FROM
-  pg_statio_user_tables;
+    pg_statio_user_tables;
