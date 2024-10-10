@@ -20,11 +20,11 @@
 -- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  count(1),
-  state
+    count(1),
+    state
 FROM
-  pg_stat_activity
+    pg_stat_activity
 GROUP BY
-  state
+    state
 ORDER BY
-  1 DESC;
+    1 DESC;
