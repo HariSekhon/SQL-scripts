@@ -24,22 +24,22 @@
 -- https://www.postgresql.org/docs/12/runtime-config-connection.html#RUNTIME-CONFIG-CONNECTION-SSL
 
 SELECT
-  name,
-  setting,
-  -- category
-  vartype,
-  short_desc,
-  enumvals,
-  boot_val,
-  reset_val,
-  -- not available on PostgreSQL < 9.5
-  pending_restart
+    name,
+    setting,
+    -- category
+    vartype,
+    short_desc,
+    enumvals,
+    boot_val,
+    reset_val,
+    -- not available on PostgreSQL < 9.5
+    pending_restart
 FROM
-  pg_settings
+    pg_settings
 WHERE
-  name ILIKE '%ssl%'
-    OR
-  -- Connections and Authentication / SSL
-  category ILIKE '%SSL%'
-    OR
-  short_desc ILIKE '%SSL%';
+    name ILIKE '%ssl%'
+      OR
+    -- Connections and Authentication / SSL
+    category ILIKE '%SSL%'
+      OR
+    short_desc ILIKE '%SSL%';
