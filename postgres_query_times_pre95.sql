@@ -29,16 +29,16 @@
 CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
 
 SELECT
-  calls,
-  rows,
-  ROUND(total_time::numeric / 1000, 4) AS total_secs,
-  -- newer versions of PostgreSQL have mean_time field, but we have to calculate on PostgreSQL <= 9.4
-  ROUND(total_time::numeric / 1000 / GREATEST(calls, 1), 4) AS average_secs,
-  query
+    calls,
+    rows,
+    ROUND(total_time::numeric / 1000, 4) AS total_secs,
+    -- newer versions of PostgreSQL have mean_time field, but we have to calculate on PostgreSQL <= 9.4
+    ROUND(total_time::numeric / 1000 / GREATEST(calls, 1), 4) AS average_secs,
+    query
 FROM
-  pg_stat_statements
+    pg_stat_statements
 ORDER BY
-  average_secs DESC,
-  calls DESC,
-  rows DESC
+    average_secs DESC,
+    calls DESC,
+    rows DESC
 LIMIT 100;
