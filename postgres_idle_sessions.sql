@@ -24,30 +24,30 @@
 -- Tested on PostgreSQL 9.2, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  rank() over (partition by client_addr order by backend_start ASC) as rank,
-  pid,
-  backend_start,
-  query_start,
-  state_change,
-  datname,
-  usename,
-  client_addr
+    rank() over (partition by client_addr order by backend_start ASC) as rank,
+    pid,
+    backend_start,
+    query_start,
+    state_change,
+    datname,
+    usename,
+    client_addr
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  -- don't kill yourself
-  pid <> pg_backend_pid()
-  --  AND
-  -- don't kill your admin tools
-  --application_name !~ '(?:psql)|(?:pgAdmin.+)'
-  --  AND
-  --usename not in ('postgres')
-    AND
-  query in ('')
-    AND
-  (
-    (current_timestamp - query_start) > interval '10 minutes'
-      OR
-    (query_start IS NULL AND (current_timestamp - backend_start) > interval '10 minutes')
-  )
+    -- don't kill yourself
+    pid <> pg_backend_pid()
+    --  AND
+    -- don't kill your admin tools
+    --application_name !~ '(?:psql)|(?:pgAdmin.+)'
+    --  AND
+    --usename not in ('postgres')
+        AND
+    query in ('')
+        AND
+    (
+      (current_timestamp - query_start) > interval '10 minutes'
+          OR
+      (query_start IS NULL AND (current_timestamp - backend_start) > interval '10 minutes')
+    )
 ;
