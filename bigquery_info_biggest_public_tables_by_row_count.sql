@@ -65,8 +65,8 @@ SELECT
     TIMESTAMP_MILLIS(creation_time) AS creation_time,
     TIMESTAMP_MILLIS(last_modified_time) as last_modified_time,
     CASE
-      WHEN type = 1 THEN 'table'
-      WHEN type = 2 THEN 'view'
+       WHEN type = 1 THEN 'table'
+       WHEN type = 2 THEN 'view'
     ELSE NULL
     END AS type
 FROM
