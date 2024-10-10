@@ -20,13 +20,13 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  relname AS table,
-  100 * idx_scan / GREATEST(seq_scan + idx_scan, 1) AS percent_of_times_index_used,
-  n_live_tup AS rows_in_table
+    relname AS table,
+    100 * idx_scan / GREATEST(seq_scan + idx_scan, 1) AS percent_of_times_index_used,
+    n_live_tup AS rows_in_table
 FROM
-  pg_stat_user_tables
+    pg_stat_user_tables
 WHERE
-  seq_scan + idx_scan > 0
+    seq_scan + idx_scan > 0
 ORDER BY
-  rows_in_table DESC,
-  percent_of_times_index_used DESC;
+    rows_in_table DESC,
+    percent_of_times_index_used DESC;
