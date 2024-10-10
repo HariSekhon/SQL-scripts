@@ -18,12 +18,12 @@
 -- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.0 - 10.5
 
 SELECT
-  table_schema,
-  ROUND(SUM(data_length + index_length) / 1024 / 1024, 3) AS 'Database Size (MB)',
-  ROUND(SUM(data_free) / 1024 / 1024, 3) AS 'Free Space (MB)'
+    table_schema,
+    ROUND(SUM(data_length + index_length) / 1024 / 1024, 3) AS 'Database Size (MB)',
+    ROUND(SUM(data_free) / 1024 / 1024, 3) AS 'Free Space (MB)'
 FROM
-  information_schema.tables
+    information_schema.tables
 GROUP BY
-  table_schema
+    table_schema
 ORDER BY
-  2 DESC;
+    2 DESC;
