@@ -24,22 +24,22 @@
 -- https://www.postgresql.org/docs/12/runtime-config-statistics.html
 
 SELECT
-  name,
-  setting,
-  -- category,
-  vartype,
-  short_desc,
-  -- enumvals,
-  source,
-  min_val,
-  max_val,
-  boot_val,
-  reset_val,
-  -- not available on PostgreSQL < 9.5
-  pending_restart
+    name,
+    setting,
+    -- category,
+    vartype,
+    short_desc,
+    -- enumvals,
+    source,
+    min_val,
+    max_val,
+    boot_val,
+    reset_val,
+    -- not available on PostgreSQL < 9.5
+    pending_restart
 FROM
-  pg_settings
+    pg_settings
 WHERE
-  -- Statistics / Query and Index Statistics Collector
-  -- Statistics / Monitoring
-  category ILIKE '%Statistics%';
+    -- Statistics / Query and Index Statistics Collector
+    -- Statistics / Monitoring
+    category ILIKE '%Statistics%';
