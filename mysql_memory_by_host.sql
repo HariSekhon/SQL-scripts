@@ -23,10 +23,10 @@
 -- sys doesn't exist in MySQL <= 5.6 or MariaDB 10.5
 
 SELECT
-  *
+    *
 FROM
-  sys.memory_by_host_by_current_bytes
+    sys.memory_by_host_by_current_bytes
 WHERE
-  host <> 'background'
+    host <> 'background'
 ORDER BY
-  total_allocated DESC;
+    total_allocated DESC;
