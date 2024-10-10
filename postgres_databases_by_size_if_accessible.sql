@@ -18,17 +18,17 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  d.datname AS Name,
-  pg_catalog.pg_get_userbyid(d.datdba) AS Owner,
-  CASE WHEN pg_catalog.has_database_privilege(d.datname, 'CONNECT')
-    THEN pg_catalog.pg_size_pretty(pg_catalog.pg_database_size(d.datname))
-    ELSE 'No Access'
-  END AS SIZE
+    d.datname AS Name,
+    pg_catalog.pg_get_userbyid(d.datdba) AS Owner,
+    CASE WHEN pg_catalog.has_database_privilege(d.datname, 'CONNECT')
+        THEN pg_catalog.pg_size_pretty(pg_catalog.pg_database_size(d.datname))
+        ELSE 'No Access'
+    END AS SIZE
 FROM
-  pg_catalog.pg_database d
+    pg_catalog.pg_database d
 ORDER BY
-  CASE WHEN pg_catalog.has_database_privilege(d.datname, 'CONNECT')
-    THEN pg_catalog.pg_database_size(d.datname)
-    ELSE NULL
-  END
-  DESC;
+    CASE WHEN pg_catalog.has_database_privilege(d.datname, 'CONNECT')
+        THEN pg_catalog.pg_database_size(d.datname)
+        ELSE NULL
+    END
+    DESC;
