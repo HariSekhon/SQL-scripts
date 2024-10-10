@@ -24,24 +24,24 @@
 -- https://www.postgresql.org/docs/12/runtime-config-client.html
 
 SELECT
-  name,
-  setting,
-  -- category,
-  vartype,
-  short_desc,
-  enumvals,
-  source,
-  min_val,
-  max_val,
-  boot_val,
-  reset_val,
-  -- not available on PostgreSQL < 9.5
-  pending_restart
+    name,
+    setting,
+    -- category,
+    vartype,
+    short_desc,
+    enumvals,
+    source,
+    min_val,
+    max_val,
+    boot_val,
+    reset_val,
+    -- not available on PostgreSQL < 9.5
+    pending_restart
 FROM
-  pg_settings
+    pg_settings
 WHERE
-  -- Client Connection Defaults / Statement Behavior
-  -- Client Connection Defaults / Locale and Formatting
-  -- Client Connection Defaults / Other Defaults
-  -- Client Connection Defaults / Shared Library Preloading
-  category ILIKE '%Client Connection Defaults%';
+    -- Client Connection Defaults / Statement Behavior
+    -- Client Connection Defaults / Locale and Formatting
+    -- Client Connection Defaults / Other Defaults
+    -- Client Connection Defaults / Shared Library Preloading
+    category ILIKE '%Client Connection Defaults%';
