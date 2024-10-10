@@ -22,6 +22,6 @@
 -- https://dev.mysql.com/doc/refman/8.0/en/sql-function-reference.html
 
 SELECT
-  USER()         AS 'Your Requested USER()',      -- client's reported user + host, same as SESSION_USER(), SYSTEM_USER()
-  CURRENT_USER() AS 'Your Actual CURRENT_USER()'  -- authenticated user name + host name - this is the one you want for debugging your mysql.user table configuration
+    USER()         AS 'Your Requested USER()',      -- client's reported user + host, same as SESSION_USER(), SYSTEM_USER()
+    CURRENT_USER() AS 'Your Actual CURRENT_USER()'  -- authenticated user name + host name - this is the one you want for debugging your mysql.user table configuration
 ;
