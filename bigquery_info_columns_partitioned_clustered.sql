@@ -27,5 +27,5 @@ FROM
     `bigquery-public-data.github_repos.INFORMATION_SCHEMA.COLUMNS`
 WHERE
     is_partitioning_column = 'YES'
-      OR
+        OR
     clustering_ordinal_position IS NOT NULL;
