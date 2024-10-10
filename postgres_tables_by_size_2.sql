@@ -18,13 +18,13 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  schemaname AS table_schema,
-  relname AS TABLE_NAME,
-  pg_size_pretty(pg_total_relation_size(relid)) AS total_size,
-  pg_size_pretty(pg_relation_size(relid)) AS data_size,
-  pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) AS external_size
+    schemaname AS table_schema,
+    relname AS TABLE_NAME,
+    pg_size_pretty(pg_total_relation_size(relid)) AS total_size,
+    pg_size_pretty(pg_relation_size(relid)) AS data_size,
+    pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) AS external_size
 FROM
-  pg_catalog.pg_statio_user_tables
+    pg_catalog.pg_statio_user_tables
 ORDER BY
-  pg_total_relation_size(relid) DESC,
-  pg_relation_size(relid) DESC;
+    pg_total_relation_size(relid) DESC,
+    pg_relation_size(relid) DESC;
