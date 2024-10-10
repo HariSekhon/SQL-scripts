@@ -24,28 +24,28 @@
 -- https://www.postgresql.org/docs/12/runtime-config-query.html
 
 SELECT
-  name,
-  setting,
-  -- category,
-  vartype,
-  short_desc,
-  -- enumvals,
-  source,
-  min_val,
-  max_val,
-  boot_val,
-  reset_val,
-  -- not available on PostgreSQL < 9.5
-  pending_restart
+    name,
+    setting,
+    -- category,
+    vartype,
+    short_desc,
+    -- enumvals,
+    source,
+    min_val,
+    max_val,
+    boot_val,
+    reset_val,
+    -- not available on PostgreSQL < 9.5
+    pending_restart
 FROM
-  pg_settings
+    pg_settings
 WHERE
-  -- Query Tuning / Planner Method Configuration
-  -- Query Tuning / Planner Cost Constants
-  -- Query Tuning / Other Planner Options
-  -- Query Tuning / Genetic Query Optimizer
-  -- Statistics / Query and Index Statistics Collector
-  --
-  -- more general to pull in 'track_activities' from category 'Statistics / Query and Index Statistics Collector'
-  --category ILIKE '%Query Tuning%';
-  category ILIKE '%Query%';
+    -- Query Tuning / Planner Method Configuration
+    -- Query Tuning / Planner Cost Constants
+    -- Query Tuning / Other Planner Options
+    -- Query Tuning / Genetic Query Optimizer
+    -- Statistics / Query and Index Statistics Collector
+    --
+    -- more general to pull in 'track_activities' from category 'Statistics / Query and Index Statistics Collector'
+    --category ILIKE '%Query Tuning%';
+    category ILIKE '%Query%';
