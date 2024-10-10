@@ -23,8 +23,8 @@
 -- sys doesn't exist in MySQL <= 5.6 or MariaDB 10.5
 
 SELECT
-  *
+    *
 FROM
-  sys.host_summary
+    sys.host_summary
 ORDER BY
-  statement_latency DESC;
+    statement_latency DESC;
