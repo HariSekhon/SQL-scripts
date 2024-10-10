@@ -20,11 +20,11 @@
 -- Tested on PostgreSQL 9.6+, 10.x 11.x, 12.x, 13.0
 
 SELECT
-  pid,
-  usename,
-  pg_blocking_pids(pid) AS blocked_by_pids,
-  query AS blocked_query
+    pid,
+    usename,
+    pg_blocking_pids(pid) AS blocked_by_pids,
+    query AS blocked_query
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  cardinality(pg_blocking_pids(pid)) > 0;
+    cardinality(pg_blocking_pids(pid)) > 0;
