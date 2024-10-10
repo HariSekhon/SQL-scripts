@@ -24,21 +24,21 @@
 -- https://www.postgresql.org/docs/12/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-MEMORY
 
 SELECT
-  name,
-  setting,
-  -- category,
-  vartype,
-  short_desc,
-  -- enumvals,
-  source,
-  min_val,
-  max_val,
-  boot_val,
-  reset_val,
-  -- not available on PostgreSQL < 9.5
-  pending_restart
+    name,
+    setting,
+    -- category,
+    vartype,
+    short_desc,
+    -- enumvals,
+    source,
+    min_val,
+    max_val,
+    boot_val,
+    reset_val,
+    -- not available on PostgreSQL < 9.5
+    pending_restart
 FROM
-  pg_settings
+    pg_settings
 WHERE
-  -- Resource Usage / Memory
-  category ILIKE '%Memory%';
+    -- Resource Usage / Memory
+    category ILIKE '%Memory%';
