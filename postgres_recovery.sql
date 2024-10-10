@@ -20,12 +20,12 @@
 -- Tested on PostgreSQL 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  pg_is_in_backup(),
-  pg_is_in_recovery(),
-  pg_backup_start_time(),
-  -- the following recovery control functions can only be executed during recovery - to get just the above use postgres_funcs.sql
-  ( CASE WHEN pg_is_in_recovery() THEN pg_is_wal_replay_paused() END)       AS "pg_is_wal_replay_paused()",
-  ( CASE WHEN pg_is_in_recovery() THEN pg_last_wal_receive_lsn() END)       AS "pg_last_wal_receive_lsn()",
-  ( CASE WHEN pg_is_in_recovery() THEN pg_last_wal_replay_lsn() END)        AS "pg_last_wal_replay_lsn()",
-  ( CASE WHEN pg_is_in_recovery() THEN pg_last_xact_replay_timestamp() END) AS "pg_last_xact_replay_timestamp()"
+    pg_is_in_backup(),
+    pg_is_in_recovery(),
+    pg_backup_start_time(),
+    -- the following recovery control functions can only be executed during recovery - to get just the above use postgres_funcs.sql
+    ( CASE WHEN pg_is_in_recovery() THEN pg_is_wal_replay_paused() END)       AS "pg_is_wal_replay_paused()",
+    ( CASE WHEN pg_is_in_recovery() THEN pg_last_wal_receive_lsn() END)       AS "pg_last_wal_receive_lsn()",
+    ( CASE WHEN pg_is_in_recovery() THEN pg_last_wal_replay_lsn() END)        AS "pg_last_wal_replay_lsn()",
+    ( CASE WHEN pg_is_in_recovery() THEN pg_last_xact_replay_timestamp() END) AS "pg_last_xact_replay_timestamp()"
 ;
