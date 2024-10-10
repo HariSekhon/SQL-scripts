@@ -21,11 +21,11 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  schemaname,
-  relname,
-  n_live_tup
+    schemaname,
+    relname,
+    n_live_tup
 FROM
-  --pg_stat_all_tables
-  pg_stat_user_tables
+    --pg_stat_all_tables
+    pg_stat_user_tables
 ORDER BY
-  n_live_tup DESC;
+    n_live_tup DESC;
