@@ -18,14 +18,14 @@ WITH all_visitor_stats AS (
 SELECT
     fullvisitorid,
     IF(
-      COUNTIF(totals.transactions > 0
-      AND
-      totals.newVisits IS NULL) > 0, 1, 0
-      ) AS will_buy_on_return_visit
+        COUNTIF(totals.transactions > 0
+            AND
+        totals.newVisits IS NULL) > 0, 1, 0
+    ) AS will_buy_on_return_visit
     FROM
-      `data-to-insights.ecommerce.web_analytics`
+        `data-to-insights.ecommerce.web_analytics`
     GROUP BY
-      fullvisitorid
+        fullvisitorid
 )
 
 SELECT
