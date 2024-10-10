@@ -21,11 +21,11 @@
 
 
 SELECT
-  *
+    *
 FROM
-  -- XXX: replace bigquery-public-data.github_repos with myproject.mydataset
- `bigquery-public-data.github_repos.INFORMATION_SCHEMA.COLUMNS`
+    -- XXX: replace bigquery-public-data.github_repos with myproject.mydataset
+    `bigquery-public-data.github_repos.INFORMATION_SCHEMA.COLUMNS`
 WHERE
-  is_partitioning_column = 'YES'
-    OR
-  clustering_ordinal_position IS NOT NULL;
+    is_partitioning_column = 'YES'
+      OR
+    clustering_ordinal_position IS NOT NULL;
