@@ -2,7 +2,7 @@
 --  Author: Hari Sekhon
 --  Date: 2020-09-06 09:22:11 +0100 (Sun, 06 Sep 2020)
 --
---  vim:ts=2:sts=2:sw=2:et:filetype=sql
+--  vim:ts=4:sts=4:sw=4:et:filetype=sql
 --
 --  https://github.com/HariSekhon/SQL-scripts
 --
