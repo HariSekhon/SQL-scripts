@@ -18,7 +18,6 @@
 SELECT
     NAME,
     checkpoint_time,
-    file#
 FROM
     v$datafile
 ORDER BY
