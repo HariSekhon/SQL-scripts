@@ -18,10 +18,10 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  datname,
-  numbackends
+    datname,
+    numbackends
 FROM
-  pg_catalog.pg_stat_database
+    pg_catalog.pg_stat_database
 ORDER BY
-  numbackends DESC,
-  datname ASC;
+    numbackends DESC,
+    datname ASC;
