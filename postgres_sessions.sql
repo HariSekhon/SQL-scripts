@@ -20,18 +20,18 @@
 -- Tested on PostgreSQL 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  pid,
-  usename,
-  client_addr,
-  client_hostname,
-  client_port,
-  backend_start,
-  query_start,
-  state,
-  -- not available on PostgreSQL < 10
-  backend_type
+    pid,
+    usename,
+    client_addr,
+    client_hostname,
+    client_port,
+    backend_start,
+    query_start,
+    state,
+    -- not available on PostgreSQL < 10
+    backend_type
 FROM
-  pg_stat_activity
+    pg_stat_activity
 ORDER BY
-  -- not available on PostgreSQL < 10
-  backend_type;
+    -- not available on PostgreSQL < 10
+    backend_type;
