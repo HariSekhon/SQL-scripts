@@ -20,28 +20,28 @@
 -- https://wiki.postgresql.org/wiki/Lock_Monitoring
 
 SELECT
-  t.schemaname,
-  t.relname,
-  -- l.database, -- id number is less useful, take schemaname from join instead
-  l.locktype,
-  page,
-  virtualtransaction,
-  pid,
-  mode,
-  granted
+    t.schemaname,
+    t.relname,
+    -- l.database, -- id number is less useful, take schemaname from join instead
+    l.locktype,
+    page,
+    virtualtransaction,
+    pid,
+    mode,
+    granted
 FROM
-  pg_locks l,
-  --pg_stat_user_tables t
-  pg_stat_all_tables t
+    pg_locks l,
+    --pg_stat_user_tables t
+    pg_stat_all_tables t
 WHERE
-  l.relation = t.relid
+    l.relation = t.relid
 ORDER BY
-  relation ASC;
+    relation ASC;
 
 SELECT
-  relation::regclass AS relation_regclass,
-  *
+    relation::regclass AS relation_regclass,
+    *
 FROM
-  pg_locks
+    pg_locks
 WHERE
-  NOT granted;
+    NOT granted;
