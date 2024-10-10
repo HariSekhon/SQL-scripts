@@ -18,26 +18,26 @@
 -- Tested on MySQL 5.5, 5.6, 5.7, 8.0 and MariaDB 5.5, 10.0 - 10.5
 
 SELECT
-  table_schema,
-  table_name,
-  table_type,
-  engine,
-  table_rows,
-  avg_row_length,
-  data_length,
-  max_data_length,
-  index_length,
-  data_free,
-  auto_increment,
-  create_time,
-  update_time,
-  table_comment
+    table_schema,
+    table_name,
+    table_type,
+    engine,
+    table_rows,
+    avg_row_length,
+    data_length,
+    max_data_length,
+    index_length,
+    data_free,
+    auto_increment,
+    create_time,
+    update_time,
+    table_comment
 FROM
-  information_schema.tables
+    information_schema.tables
 WHERE
-  table_type NOT LIKE '%VIEW%'
-  AND
-  table_schema NOT IN ('mysql', 'sys', 'information_schema', 'performance_schema')
+    table_type NOT LIKE '%VIEW%'
+        AND
+    table_schema NOT IN ('mysql', 'sys', 'information_schema', 'performance_schema')
 ORDER BY
-  table_schema,
-  table_name;
+    table_schema,
+    table_name;
