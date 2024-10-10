@@ -22,21 +22,21 @@
 -- https://wiki.postgresql.org/wiki/Lock_Monitoring
 
 SELECT
-  a.datname,
-  l.relation::regclass,
-  l.transactionid,
-  l.mode,
-  l.GRANTED,
-  a.usename,
-  a.query,
-  a.query_start,
-  age(now(), a.query_start) AS "age",
-  a.pid
+    a.datname,
+    l.relation::regclass,
+    l.transactionid,
+    l.mode,
+    l.GRANTED,
+    a.usename,
+    a.query,
+    a.query_start,
+    age(now(), a.query_start) AS "age",
+    a.pid
 FROM
-  pg_stat_activity a
+    pg_stat_activity a
 JOIN
-  pg_locks l
+    pg_locks l
 ON
-  l.pid = a.pid
+    l.pid = a.pid
 ORDER BY
-  a.query_start;
+    a.query_start;
