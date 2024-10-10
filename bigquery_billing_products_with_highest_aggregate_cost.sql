@@ -18,11 +18,11 @@
 -- products with highest aggregate cost
 
 SELECT
-  product,
-  ROUND(SUM(cost), 2) AS total_cost
+    product,
+    ROUND(SUM(cost), 2) AS total_cost
 FROM
-  `myproject.mydataset.imported_billing_data`
+    `myproject.mydataset.imported_billing_data`
 GROUP BY
-  product
+    product
 ORDER BY
-  total_cost DESC;
+    total_cost DESC;
