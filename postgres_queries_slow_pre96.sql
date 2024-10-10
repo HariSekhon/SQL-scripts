@@ -22,19 +22,19 @@
 -- Tested on PostgreSQL 9.2, 9.3, 9.4, 9.5
 
 SELECT
-  now() - query_start as "runtime",
-  usename,
-  datname,
-  -- not available on PostgreSQL < 9.6
-  -- wait_event,
-  waiting,
-  -- not available on PostgreSQL < 9.2
-  state,
-  query
+    now() - query_start as "runtime",
+    usename,
+    datname,
+    -- not available on PostgreSQL < 9.6
+    -- wait_event,
+    waiting,
+    -- not available on PostgreSQL < 9.2
+    state,
+    query
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  -- can't use 'runtime' here
-  now() - query_start > '30 seconds'::interval
+    -- can't use 'runtime' here
+    now() - query_start > '30 seconds'::interval
 ORDER BY
-  runtime DESC;
+    runtime DESC;
