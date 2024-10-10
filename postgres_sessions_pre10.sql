@@ -20,13 +20,13 @@
 -- Tested on PostgreSQL 9.2 - 9.6, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  pid,
-  usename,
-  client_addr,
-  client_hostname,
-  client_port,
-  backend_start,
-  query_start,
-  state
+    pid,
+    usename,
+    client_addr,
+    client_hostname,
+    client_port,
+    backend_start,
+    query_start,
+    state
 FROM
-  pg_stat_activity;
+    pg_stat_activity;
