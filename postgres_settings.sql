@@ -22,18 +22,18 @@
 --\pset title 'pg_settings'
 \echo pg_settings:
 SELECT
-  name,
-  setting,
-  unit,
-  context
+    name,
+    setting,
+    unit,
+    context
 FROM
-  pg_settings;
+    pg_settings;
 
 \echo
 
 --\pset title 'pg_file_settings'
 \echo pg_file_settings:
 SELECT
-  *
+    *
 FROM
-  pg_file_settings;
+    pg_file_settings;
