@@ -18,13 +18,13 @@
 -- commonly charged units of measure
 
 SELECT
-  usage_unit,
-  COUNT(*) AS billing_records
+    usage_unit,
+    COUNT(*) AS billing_records
 FROM
-  `myproject.mydata.imported_billing_data`
+    `myproject.mydata.imported_billing_data`
 WHERE
-  cost > 0
+    cost > 0
 GROUP BY
-  usage_unit
+    usage_unit
 ORDER BY
-  billing_records DESC;
+    billing_records DESC;
