@@ -23,18 +23,18 @@
 -- some fields don't exist on MySQL < 8.0 and MariaDB 10.0 - 10.5, must use mysql_users_pre8.sql instead
 
 SELECT
-  host,
-  user,
-  max_connections,
-  max_user_connections,
-  password_expired,
-  password_last_changed,
-  password_lifetime,
-  account_locked,
-  password_reuse_time,
-  password_require_current
+    host,
+    user,
+    max_connections,
+    max_user_connections,
+    password_expired,
+    password_last_changed,
+    password_lifetime,
+    account_locked,
+    password_reuse_time,
+    password_require_current
 FROM
-  mysql.user
+    mysql.user
 ORDER BY
-  host,
-  user;
+    host,
+    user;
