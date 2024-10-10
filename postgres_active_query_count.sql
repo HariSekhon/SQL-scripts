@@ -22,8 +22,8 @@
 -- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  COUNT(*) as active_query_count
+    COUNT(*) as active_query_count
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  state='active';
+    state='active';
