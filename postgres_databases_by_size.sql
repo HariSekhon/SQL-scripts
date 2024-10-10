@@ -18,9 +18,9 @@
 -- Tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  datname,
-  pg_size_pretty(pg_database_size(datname))
+    datname,
+    pg_size_pretty(pg_database_size(datname))
 FROM
-  pg_database
+    pg_database
 ORDER
-  BY pg_database_size(datname) DESC;
+    BY pg_database_size(datname) DESC;
