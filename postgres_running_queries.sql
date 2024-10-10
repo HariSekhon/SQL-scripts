@@ -20,16 +20,16 @@
 -- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  pid,
-  age(clock_timestamp(), query_start),
-  usename,
-  application_name,
-  query
+    pid,
+    age(clock_timestamp(), query_start),
+    usename,
+    application_name,
+    query
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  state != 'idle'
-    AND
-  query NOT ILIKE '%pg_stat_activity%'
+    state != 'idle'
+      AND
+    query NOT ILIKE '%pg_stat_activity%'
 ORDER BY
-  query_start DESC;
+    query_start DESC;
