@@ -20,26 +20,26 @@
 -- Tested on PostgreSQL 9.2+, 10.x, 11.x, 12.x, 13.0
 
 SELECT
-  pg_terminate_backend(pid)
+    pg_terminate_backend(pid)
 FROM
-  pg_stat_activity
+    pg_stat_activity
 WHERE
-  -- don't kill yourself
-  pid <> pg_backend_pid()
-  --  AND
-  -- don't kill your admin tools
-  --application_name !~ '(?:psql)|(?:pgAdmin.+)'
-  --  AND
-  --usename not in ('postgres')
-    AND
-  query in ('')
-    AND
-  state in ('idle', 'idle in transaction', 'idle in transaction (aborted)', 'disabled')
-    AND
-  --state_change < current_timestamp - INTERVAL '15' MINUTE;
-  (
-    (current_timestamp - query_start) > interval '15 minutes'
-      OR
-    (query_start IS NULL AND (current_timestamp - backend_start) > interval '15 minutes')
-  )
+    -- don't kill yourself
+    pid <> pg_backend_pid()
+    --  AND
+    -- don't kill your admin tools
+    --application_name !~ '(?:psql)|(?:pgAdmin.+)'
+    --  AND
+    --usename not in ('postgres')
+        AND
+    query in ('')
+        AND
+    state in ('idle', 'idle in transaction', 'idle in transaction (aborted)', 'disabled')
+        AND
+    --state_change < current_timestamp - INTERVAL '15' MINUTE;
+    (
+      (current_timestamp - query_start) > interval '15 minutes'
+          OR
+      (query_start IS NULL AND (current_timestamp - backend_start) > interval '15 minutes')
+    )
 ;
