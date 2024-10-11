@@ -13,4 +13,32 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle
+-- Oracle - Show Tables' Space Used vs Free and Percentage Percentage where they are at lease 20% utilized
+
+SELECT
+    owner,
+    table_name,
+    -- each block is 8KB, multiply it to GB, round to two decimal places
+    ROUND(blocks * 8 / 1024 / 1024, 2) AS total_gb,
+    -- estimate data size from rows vs average row size, round to two decimal places
+    ROUND(num_rows * avg_row_len / 1024 / 1024 / 1024, 2) AS actual_data_gb,
+    -- estimate free space by subtracting the two above calculations
+    ROUND((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024), 2) AS free_space_gb,
+    -- calculate free space percentage from the above three calculations
+    ROUND(
+        ( (blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024) ) /
+        (blocks * 8 / 1024 / 1024) * 100, 2) AS free_space_pct
+FROM
+    dba_tables
+WHERE
+    blocks > 0
+        AND
+    num_rows > 0
+        AND
+    ((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024)) /
+    (blocks * 8 / 1024 / 1024) > 0.2
+        AND
+    owner <> 'SYS'
+ORDER BY
+    free_space_mb DESC,
+    total_mb DESC;
