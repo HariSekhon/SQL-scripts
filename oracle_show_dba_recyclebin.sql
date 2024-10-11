@@ -16,6 +16,8 @@
 -- Oracle - Show All Users Recyclebins via DBA Recyclebin
 
 SELECT
+    --owner,
+    --object_name,
     username,
     original_name,
     type,
@@ -25,5 +27,7 @@ SELECT
 FROM
     dba_recyclebin
 ORDER BY
-    username, drop_time
+    --owner,
+    username,
+    drop_time
 DESC;
