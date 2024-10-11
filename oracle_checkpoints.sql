@@ -17,7 +17,7 @@
 
 SELECT
     NAME,
-    checkpoint_time,
+    checkpoint_time
 FROM
     v$datafile
 ORDER BY
