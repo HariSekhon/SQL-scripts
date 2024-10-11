@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle - Show Tablespace Size, Space Used vs Free in GB and as a Percentage
+-- Oracle - Show Tablespace Size, Space Used vs Free in GB and Percentage Used
 
 SELECT
     tablespace_name "Tablespace",
