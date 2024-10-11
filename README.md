@@ -18,6 +18,7 @@
 [![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
 [![ShellCheck](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml)
 [![YAML](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml)
+[![Markdown](https://github.com/HariSekhon/SQL-scripts/actions/workflows/markdown.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/markdown.yaml)
 [![Validation](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/validate.yaml)
 [![Grype](https://github.com/HariSekhon/SQL-scripts/actions/workflows/grype.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/grype.yaml)
 [![Kics](https://github.com/HariSekhon/SQL-scripts/actions/workflows/kics.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/kics.yaml)
