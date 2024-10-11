@@ -13,4 +13,27 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle
+-- Oracle - Show Tablespace
+
+SELECT
+    df.tablespace_name "Tablespace",
+    df.bytes / (1024 * 1024) "Size (MB)",
+    (df.bytes - SUM(fs.bytes)) / (1024 * 1024) "Used (MB)",
+    SUM(fs.bytes) / (1024 * 1024) "Free (MB)",
+    ROUND(SUM(fs.bytes) / df.bytes * 100, 2) "Free %"
+FROM
+    dba_free_space fs,
+    (SELECT
+        tablespace_name,
+        SUM(bytes) bytes
+    FROM
+        dba_data_files
+    GROUP BY
+        tablespace_name) df
+WHERE
+    fs.tablespace_name (+) = df.tablespace_name
+GROUP BY
+     df.tablespace_name,
+     df.bytes
+ORDER BY
+     "Free %";
