@@ -21,7 +21,7 @@ SELECT
     type,
     drop_time,
     is_parent,
-    recyclebin_namE
+    recyclebin_name
 FROM
     dba_recyclebin
 ORDER BY
