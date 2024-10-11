@@ -13,4 +13,17 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle
+-- Oracle - Show Tablespace Size, Space Used vs Free in GB and as a Percentage
+
+SELECT
+    tablespace_name "Tablespace",
+    -- convert used_space in blocks to GB as each block is 8KB
+    ROUND(used_space * 8 / 1024 / 1024, 2) AS "Used Space (GB)",
+    -- convert tablespace_size in blocks to GB as each block is 8KB
+    ROUND(tablespace_size * 8 / 1024 / 1024, 2) AS "Total Space (GB)",
+    ROUND(used_percent, 2) AS "Used Space %"
+FROM
+    dba_tablespace_usage_metrics
+ORDER BY
+    "Used %"
+DESC;
