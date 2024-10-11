@@ -17,9 +17,9 @@
 
 SELECT
     df.tablespace_name "Tablespace",
-    df.bytes / (1024 * 1024) "Size (MB)",
-    (df.bytes - SUM(fs.bytes)) / (1024 * 1024) "Used (MB)",
-    SUM(fs.bytes) / (1024 * 1024) "Free (MB)",
+    df.bytes / (1024 * 1024 * 1024) "Size (GB)",
+    (df.bytes - SUM(fs.bytes)) / (1024 * 1024 * 1024) "Used (GB)",
+    SUM(fs.bytes) / (1024 * 1024 * 1024) "Free (GB)",
     ROUND(SUM(fs.bytes) / df.bytes * 100, 2) "Free %"
 FROM
     dba_free_space fs,
