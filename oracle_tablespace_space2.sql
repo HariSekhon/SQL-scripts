@@ -27,5 +27,4 @@ SELECT
 FROM
     dba_tablespace_usage_metrics
 ORDER BY
-    "Used Space %"
-DESC;
+    "Used Space %" DESC;
