@@ -14,20 +14,19 @@
 --
 
 -- Oracle - Show All Users Recyclebins via DBA Recyclebin
+--
+-- Tested on Oracle 19c
 
 SELECT
-    --owner,
-    --object_name,
-    username,
+    owner,
+    object_name,
     original_name,
     type,
-    drop_time,
-    is_parent,
-    recyclebin_name
+    droptime,
+    space
 FROM
     dba_recyclebin
 ORDER BY
-    --owner,
-    username,
-    drop_time
+    owner,
+    droptime
 DESC;
