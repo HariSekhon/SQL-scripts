@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle last tested in late 2000s on Oracle 9i - 11
+-- Oracle Show the Checkpoints on the DBF data files (important for DBA recoveries)
+--
+-- Tested in late 2000s on Oracle 9i, 10g, 11g and in 2024 on Oracle 19c
 
 SELECT
     checkpoint_change#,
