@@ -14,6 +14,8 @@
 --
 
 -- Oracle - Show Tablespace Size, Space Used vs Free in GB and as a Percentage
+--
+-- Tested on Oracle 19c
 
 SELECT
     df.tablespace_name "Tablespace",
@@ -36,5 +38,5 @@ GROUP BY
      df.tablespace_name,
      df.bytes
 ORDER BY
-     "Free %"
-ASC;
+     "Free Space %"
+DESC;
