@@ -15,7 +15,7 @@
 
 -- Oracle - Show Recent Queries
 --
--- Testd on Oracle 19c
+-- Tested on Oracle 19c
 
 SELECT
     sql_text,
