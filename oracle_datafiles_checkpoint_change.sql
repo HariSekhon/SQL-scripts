@@ -15,7 +15,7 @@
 
 -- Oracle Show the Checkpoints on the DBF data files (important for DBA recoveries)
 --
--- Tested Oracle 9i, 10g, 11g, 19c
+-- Tested on Oracle 9i, 10g, 11g, 19c
 
 SELECT
     checkpoint_change#,
