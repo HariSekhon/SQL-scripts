@@ -40,5 +40,5 @@ WHERE
         AND
     owner <> 'SYS'
 ORDER BY
-    free_space_mb DESC,
-    total_mb DESC;
+    free_space_gb DESC,
+    total_gb DESC;
