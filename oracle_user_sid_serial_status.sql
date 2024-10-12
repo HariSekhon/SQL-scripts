@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle last tested in late 2000s on Oracle 9i - 11
+-- Oracle - Show User Sessions Status
+--
+-- Tested on Oracle 9i, 10g, 11g, 19c
 
 SELECT
     username,
