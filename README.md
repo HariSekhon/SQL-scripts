@@ -70,7 +70,23 @@ Cloud & Big Data Contractor, United Kingdom
   - [analytics/](https://github.com/HariSekhon/SQL-scripts/tree/master/analytics)`bigquery_*.sql` - ecommerce queries and [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/bigqueryml-intro) machine learning classification logistic regression models and purchasing predictions
   - for more [BigQuery](https://cloud.google.com/bigquery) examples, see [Data Engineering demos](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/data-engineering/demos)
 
+### Database Knowledge Base
+
+See the pages for:
+
+- [SQL](https://github.com/HariSekhon/Knowledge-Base/blob/main/sql.md)
+- [SQL Databases](https://github.com/HariSekhon/Knowledge-Base/blob/main/databases.md)
+- [MySQL](https://github.com/HariSekhon/Knowledge-Base/blob/main/mysql.md)
+- [PostgreSQL](https://github.com/HariSekhon/Knowledge-Base/blob/main/postgres.md)
+- [Oracle](https://github.com/HariSekhon/Knowledge-Base/blob/main/oracle.md)
+
+in the [HariSekhon/Knowledge-Base](https://github.com/HariSekhon/Knowledge-Base) repo:
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=Knowledge-Base&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/Knowledge-Base)
+
 ### DevOps SQL tooling
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HariSekhon&repo=DevOps-Bash-tools&theme=ambient_gradient&description_lines_count=3)](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 You can quickly test the PostgreSQL / MySQL scripts using `postgres.sh` / `mysqld.sh` / `mariadb.sh` in the [DevOps Bash tools](https://github.com/HariSekhon/DevOps-Bash-tools) repo, which boots a docker container and drops straight in to a `mysql` / `psql` shell with this directory mounted at `/sql` and used as `$PWD` for fast easy sourcing eg.
 
@@ -114,9 +130,9 @@ source /sql/mysql_sessions.sql
   - [hive_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_column_counts.sh) / [impala_tables_column_counts.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_column_counts.sh) - get the column counts for big tables in Hive / Impala
   - [hive_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_metadata.sh) / [impala_tables_metadata.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_metadata.sh) / [hive_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/hive_tables_locations.sh) / [impala_tables_locations.sh](https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/bigdata/impala_tables_locations.sh) - get Hive / Impala metadata for all or a subset of tables, eg. Location to determine where the external tables data is being stored (HDFS / S3 paths)
 
-## Stargazers over time
+## Star History
 
-[![Stargazers over time](https://starchart.cc/HariSekhon/SQL-scripts.svg)](https://starchart.cc/HariSekhon/SQL-scripts)
+[![Star History Chart](https://api.star-history.com/svg?repos=HariSekhon/SQL-scripts&type=Date)](https://star-history.com/#HariSekhon/SQL-scripts&Date)
 
 [git.io/SQL](https://git.io/SQL)
 
