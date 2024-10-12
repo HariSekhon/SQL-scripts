@@ -62,7 +62,7 @@ Cloud & Big Data Contractor, United Kingdom
   - [postgres_info.sql](https://github.com/HariSekhon/SQL-scripts/blob/master/postgres_info.sql) - big summary overview, recommend you start here
   - tested on PostgreSQL 8.4, 9.x, 10.x, 11.x, 12.x, 13.x
 - `oracle_*.sql`:
-  - [Oracle](https://wwww.oracle.com) queries for DBA investigating
+  - [Oracle](https://www.oracle.com) queries for DBA investigating
   - tested on Oracle 9i, 10g, 11g, 19c
 
 ### Analytics
