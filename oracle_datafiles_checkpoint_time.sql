@@ -13,7 +13,10 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle last tested in late 2000s on Oracle 9i - 11
+-- Oracle Show Checkpoint Dates on DBF data files (relevant for DBA recoveries)
+--
+-- Tested in late 2000s on Oracle 9i, 10g, 11g and 2024 on Oracle 19c
+
 
 SELECT
     checkpoint_time,
