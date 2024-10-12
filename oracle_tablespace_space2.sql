@@ -14,6 +14,8 @@
 --
 
 -- Oracle - Show Tablespace Size, Space Used GB and Percentage Used
+--
+-- Tested on Oracle 19c
 
 SELECT
     tablespace_name "Tablespace",
@@ -25,5 +27,5 @@ SELECT
 FROM
     dba_tablespace_usage_metrics
 ORDER BY
-    "Used %"
+    "Used Space %"
 DESC;
