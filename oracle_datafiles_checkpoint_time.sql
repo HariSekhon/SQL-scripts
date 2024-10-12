@@ -15,7 +15,7 @@
 
 -- Oracle Show Checkpoint Dates on DBF data files (relevant for DBA recoveries)
 --
--- Tested on Oracle 9i, 10g, 11g, Oracle 19c
+-- Tested on Oracle 9i, 10g, 11g, 19c
 
 
 SELECT
