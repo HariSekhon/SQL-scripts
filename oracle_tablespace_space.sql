@@ -38,5 +38,5 @@ GROUP BY
      df.tablespace_name,
      df.bytes
 ORDER BY
-     "Free Space %"
-DESC;
+     "Free Space (GB)" DESC,
+     "Used Space (GB)" DESC;
