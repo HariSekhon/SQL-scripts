@@ -40,7 +40,8 @@ WHERE
     ((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024)) /
     (blocks * 8 / 1024 / 1024) > 0.2
         AND
-    owner <> 'SYS'
+    owner NOT IN
+      ('SYS', 'SYSTEM', 'SYSAUX', 'RDSADMIN')
 ORDER BY
     free_space_gb DESC,
     total_gb DESC;
