@@ -38,7 +38,7 @@ WHERE
     num_rows > 0
         AND
     ((blocks * 8 / 1024 / 1024) - (num_rows * avg_row_len / 1024 / 1024 / 1024)) /
-    (blocks * 8 / 1024 / 1024) > 0.2  -- TUNE: currently only showing tables with over 20% free space
+    (blocks * 8 / 1024 / 1024) > 0.2  -- TUNE: currently only showing tables over 20% utilized
         AND
     owner NOT IN
       ('SYS', 'SYSTEM', 'SYSAUX', 'RDSADMIN')
