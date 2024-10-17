@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle - Show Tables' Space Used vs Free and Percentage Percentage where they are at lease 20% utilized
+-- Oracle - Show Tables' Space Used vs Free and Percentage Percentage
+--
+--          where the table are over 20% utilized
 --
 -- Tested on Oracle 19c
 
