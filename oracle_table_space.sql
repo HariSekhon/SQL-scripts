@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle - Show Tables' Space Used vs Free and Percentage Percentage
+-- Oracle - Show Tables' Space Used vs Free and Free Percentage
 --
 --          where the tables are over 20% utilized
 --
