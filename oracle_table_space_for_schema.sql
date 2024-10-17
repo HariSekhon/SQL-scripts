@@ -13,7 +13,9 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle - Show Tables' Space Used vs Free and Percentage Percentage where they are at lease 20% utilized
+-- Oracle - Show Tables' Space Used vs Free and Percentage Percentage
+--
+--          for tables over 20% utilized in a given tablespace
 --
 -- Tested on Oracle 19c
 
@@ -46,7 +48,7 @@ WHERE
         AND
     t.num_rows > 0
         AND
-    -- TUNE: currently only showing tables with over 20% free space
+    -- TUNE: currently only showing tables over 20% utilized
     ((t.blocks * 8 / 1024) - (t.num_rows * t.avg_row_len / 1024 / 1024)) / (t.blocks * 8 / 1024) > 0.2
         AND
     t.owner = 'USERS'  -- XXX: Change this to your owner schema
