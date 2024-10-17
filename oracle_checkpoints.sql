@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle Show Checkpoints on DBF data files (relevant for DBA recoveries)
+-- Oracle - Show Checkpoints on DBF data files (relevant for DBA recoveries)
 --
 -- Tested on Oracle 9i, 10g, 11g, 19c
 
