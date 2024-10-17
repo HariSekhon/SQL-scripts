@@ -17,6 +17,10 @@
 --
 --          for tables over 20% utilized
 --
+--  Calculations assume an 8KB block size, which you should verify like this:
+--
+--      SELECT value FROM v$parameter WHERE name = 'db_block_size';
+--
 -- Tested on Oracle 19c
 
 SELECT
