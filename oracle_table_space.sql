@@ -15,7 +15,7 @@
 
 -- Oracle - Show Tables' Space Used vs Free and Percentage Percentage
 --
---          where the table are over 20% utilized
+--          where the tables are over 20% utilized
 --
 -- Tested on Oracle 19c
 
