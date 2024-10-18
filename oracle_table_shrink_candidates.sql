@@ -13,7 +13,7 @@
 --  https://www.linkedin.com/in/HariSekhon
 --
 
--- Oracle - Show Table Candidates to Move / Shrink in a given Tablespace
+-- Oracle - Show Table Candidates to Move / Shrink in a given Tablespace 'USERS'
 --
 --          where the tables are over 20% utilized
 --
