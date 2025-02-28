@@ -16,6 +16,14 @@
 [![AWS Aurora](https://img.shields.io/badge/SQL-AWS%20Aurora-232F3E?logo=amazonwebservices)](https://aws.amazon.com/aurora/)
 [![Google BigQuery](https://img.shields.io/badge/SQL-Google%20BigQuery-4285F4?logo=google%20cloud&logoColor=white)](https://cloud.google.com/bigquery)
 
+[![Codacy](https://app.codacy.com/project/badge/Grade/c7ac78789d854b12aa3d23f36953f7e7)](https://www.codacy.com/gh/HariSekhon/SQL-scripts/dashboard)
+[![CodeFactor](https://www.codefactor.io/repository/github/harisekhon/SQL-scripts/badge)](https://www.codefactor.io/repository/github/harisekhon/SQL-scripts)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_SQL-scripts&metric=alert_status)](https://sonarcloud.io/dashboard?id=HariSekhon_SQL-scripts)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_SQL-scripts&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_SQL-scripts)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_SQL-scripts&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_SQL-scripts)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_SQL-scripts&metric=security_rating)](https://sonarcloud.io/dashboard?id=HariSekhon_SQL-scripts)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=HariSekhon_SQL-scripts&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=HariSekhon_SQL-scripts)
+
 [![CI Builds Overview](https://img.shields.io/badge/CI%20Builds-Overview%20Page-blue?logo=circleci)](https://bitbucket.org/HariSekhon/devops-bash-tools/src/master/STATUS.md)
 [![ShellCheck](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/shellcheck.yaml)
 [![YAML](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml/badge.svg)](https://github.com/HariSekhon/SQL-scripts/actions/workflows/yaml.yaml)
